@@ -1,0 +1,28 @@
+.h1
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p
+{
+    font-size: "13";
+    font-weight: "550";
+    color:"#43464b";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title
+{
+    font-size: "13";
+    font-weight: "400";
+    color:"#43464b";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,24 @@
+.Header {
+    background-color: rgb(221, 78, 78);
+    padding: 10px;
+    font-family: Arial;
+  }
+  /* .nav-style */
+/* { */
+  /* background-color: rgb(221, 78, 78); */
+  /* height: 50px; */
+/* } */
+.text-style
+{
+  color: #ffffff;
+}
+.link-style{
+  color: #b1babf;
+}
+.Header{
+  background-color: rgb(221, 78, 78);
+  height: 50px;
+}
+.bus-ticket{
+  color:white;
+}
