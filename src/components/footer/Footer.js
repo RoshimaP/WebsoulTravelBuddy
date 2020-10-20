@@ -2,7 +2,7 @@ import React from "react";
 import './Footer.css';
 import ReactDOM from 'react-dom';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import image from '/Users/Admin/travel_buddy/src/assets/images/logo2.png';
+import image from '../../assets/homepage/logo2.png';
 
 const FooterPage = () => {
   return (

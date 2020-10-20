@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import image1 from '/Users/Admin/travel_buddy/src/assets/images/image2.png'
-import image2 from '/Users/Admin/travel_buddy/src/assets/images/image3.png'
+import image1 from '../../../../assets/homepage/image2.png'
+import image2 from '../../../../assets/homepage/image3.png'
 class Card extends Component {
     render() { 
         return (  

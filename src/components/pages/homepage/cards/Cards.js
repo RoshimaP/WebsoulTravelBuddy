@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import image1 from '/Users/Admin/travel_buddy/src/assets/images/safety.svg';
-import image2 from '/Users/Admin/travel_buddy/src/assets/images/customer.png';
-import image3 from '/Users/Admin/travel_buddy/src/assets/images/lowest.png';
-import image4 from '/Users/Admin/travel_buddy/src/assets/images/benefits.png';
-import image5 from '/Users/Admin/travel_buddy/src/assets/images/promise.png';
-import image6 from '/Users/Admin/travel_buddy/src/assets/images/Business.png';
-import image7 from '/Users/Admin/travel_buddy/src/assets/images/Brand.png';
-import image8 from '/Users/Admin/travel_buddy/src/assets/images/Eye.png';
+import image1 from '../../../../assets/homepage/safety.svg';
+import image2 from '../../../../assets/homepage/safety.svg';
+import image3 from '../../../../assets/homepage/lowest.png';
+import image4 from '../../../../assets/homepage/benefits.png';
+import image5 from '../../../../assets/homepage/promise.png';
+import image6 from '../../../../assets/homepage/Business.png';
+import image7 from '../../../../assets/homepage/Brand.png';
+import image8 from '../../../../assets/homepage/Eye.png';
 import './Cards.css';
 
 
