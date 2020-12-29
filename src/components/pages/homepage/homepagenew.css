@@ -1,0 +1,152 @@
+.inputphone
+{
+  margin-left:-27px;
+}
+.subfootergrid
+{
+      margin-left: 30px;                      
+}
+
+.secondpara
+{
+  width:90%;
+}
+
+@media only screen and (max-width: 376px) {
+  .inputphone
+  {
+    margin-left:0px;
+  }   
+                   
+}
+@media only screen and (max-width: 1200px) {
+  
+  
+  .buttondiv
+  {
+    margin: auto;
+  }
+                   
+}
+@media only screen and (max-width: 970px) {
+  .imgdiv
+  {
+    justify-content: center;
+    margin: auto;
+  } 
+  .secondpara
+  {
+    width: 100%;
+    text-align: center;
+   
+  }
+  .firstpara
+  {
+    text-align: center;
+
+  }  
+  
+                   
+}
+@media only screen and (max-width: 959px) {
+                               
+                            .subfootergrid
+                            {
+                              text-align: center; 
+                              margin-left: 0px;                         
+                            } 
+                            .subfootergriddiv     
+                            {
+                                margin-left: -30px;                        
+                            }            
+}
+@media only screen and (max-width: 577px) {
+  .buttonsearch   
+  {
+margin-top: 0px;
+  }                          
+              
+}
+@media only screen and (max-width: 759px) {
+  .second_card   
+  {
+margin-right:40px;
+margin-top: 20px;
+  }                          
+              
+}
+
+@media only screen and (max-width: 682px) {
+  .second_card   
+  {
+margin-right: 40px!important;
+margin-top: 20px!important;
+  }   
+}
+@media only screen and (max-width: 415px) {
+  .buttonsearch   
+  {
+margin-top: 25px!important;
+  }   
+}
+@media only screen and (max-width: 359px) {
+  .psecond_card   
+  {
+margin-top: -20px!important;
+  }   
+}
+@media only screen and (max-width: 450px) {
+  .first_card   
+  {
+margin-right:10px!important;
+margin-left: 10px!important;
+  }   
+  .second_card   
+  {
+    margin-right:10px!important;
+    margin-left: 10px!important;
+  }                          
+              
+}
+
+
+
+.listlinksh
+{
+    color:#444343;
+    font-family: 'Montserrat';   
+    font-size: 13px                    
+}
+.footerht
+{
+     justify-content: end;
+     color:#444343 ;  
+     font-family: 'Montserrat';   
+    font-size: 13px ;
+    font-weight: 700; 
+    margin-left: 9px;                    
+}
+.footerhb
+{
+     justify-content: flex-end;
+     color:#000!important ;  
+     font-family: 'Montserrat';   
+    font-size: 13px ;
+    font-weight: 700; 
+}
+.first_card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.second_card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.background
+{
+  top: -100px;
+}
+.inputpla::placeholder {
+  color: #404040;
+}
+
