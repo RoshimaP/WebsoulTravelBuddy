@@ -1,0 +1,214 @@
+.main-body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(247, 247, 247);
+    height: auto;
+}
+.nav-item a{
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.div_width{
+    width: 80%;
+}
+.rp-heading{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.font_fam{
+    
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+}
+.rp-main-head{
+    font-size:44px;
+    font-weight:600;
+}
+
+.contents{
+    font-size: 15px;
+    color: #3e3e52;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.contentsreview{
+    font-size: 16px;
+    color: #3e3e52;
+    font-weight: 700;
+    font-family: 'Montserrat';
+   
+}
+.contentsp{
+    font-size: 14px;
+    color: #3e3e52;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.listlink
+{
+    color:#3e3e52;
+    font-family: 'Montserrat';   
+    font-size: 12px                    
+}
+.contentsa{
+    font-size: 12px;
+    color: #7e7e8c;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.sec_headings{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3e3e52;
+    font-family: 'Montserrat';
+    -webkit-text-stroke-width: thin;
+}
+.howitworkscontent
+{
+    font-weight: 100;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.numberstyle
+{
+
+}
+.offers_cards
+{
+    height: 195px;
+}
+.block-heading{
+    font-size: 28px;
+    font-weight: 700;
+    color: #3e3e52;
+    font-family: 'Montserrat';
+    -webkit-text-stroke-width: thin;
+}
+.circle {
+    background-color: #38b87c;
+    border-radius: 50%;
+    padding: 7px;
+}
+.activate-reward
+{
+    background: #fff url('../../../assets/rpool/img_rewards.svg') 0 0 no-repeat;
+    height: 55px;
+}
+.aboutRpool {
+    background: #ededed url('../../../assets/rpool/bc_img_carpool1.svg') 100% 100% no-repeat;
+    min-height: 231px;
+    padding: 60px 110px;
+}
+.customer_reviews{
+    border: 1px solid #e3e3e3;
+    height: 198px;
+    box-shadow: none;
+}
+.contents_faq{
+    font-size: 14px;
+    color: #3e3e52;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* details page */
+.details_width{
+    width: 85%;
+}
+.white_text{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.stayhome {
+    background: #ededed url('../../../assets/rpool/bc_img_carpool1.svg') 100% 100% no-repeat;
+    min-height: 231px;
+    padding: 60px 110px;
+}
+/* end of details page*/
+
+/*
+pilgrimage*/
+
+.name {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #444;
+    margin-top: -25%;
+    font-weight: 600;
+}
+.why_pool
+{
+    margin-left: 125px;
+}
+/*end of pilgrimage*/
+.tabfont
+{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-text-stroke-width: thin;
+    color: "#3e3e52";
+}
+.papertabs
+{
+    box-shadow: "0px";
+    border-bottom: 1px solid #bbc0cd;
+}
+@media only screen and (max-width: 708px) {
+    .howitworks
+{
+    margin-left: 31px!important;
+}
+  }
+  @media only screen and (max-width: 494px) {
+    .howitworkdiv 
+
+{
+   margin-top: -55px;
+   margin-left: 49px ;
+   font-size: 14px!important;
+}
+  }
+ 
+@media only screen and (max-width: 709px) {
+    .rp-main-head{
+        font-size:20px;
+        font-weight:600;
+    }
+    .div_width{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 490px) {
+    .why_pool
+    {
+        margin:auto
+    }
+  }
+  
+  @media only screen and (max-width: 579px) {
+    .appmargin
+
+{
+    margin-top: 25px;
+}
+  }
+  @media only screen and (max-width: 959px) {
+    .cardintro
+
+{
+    margin-bottom: 25px;
+}
+  }
+  input:focus::-webkit-input-placeholder {
+    font-size: .75em;
+    position: relative;
+    top: -15px; 
+    transition: 0.2s ease-out;
+}

@@ -1,0 +1,102 @@
+/**.modal-scrollbar-measure {
+                            overflow: hidden !Important;
+                             }
+                            .modal-open {
+                               overflow: hidden;
+                            }
+                            .modelscrollf::-webkit-scrollbar
+                            {
+                               width:0px;
+                               background: transparent;
+                            }**/
+                            
+                           
+                            
+                            
+                            .buttoncf
+                            {
+                                display :block;                        
+                            }
+                            .formwf
+                            {
+                               width:72%
+                            }
+                            
+                            /****whatsapp**/
+                            
+                            .widthcwf
+                            {
+                             max-width: 480px;                           
+                            }
+                             .modalfullwf
+                             {
+                                height: 335px;
+                             }
+                            
+                            /****whatsapp**/
+                            
+                            @media only screen and (max-width: 769px) {
+                                                        .borderrf {
+                                                  border: 0px ;
+                                                        }
+                                                  .buttonvf
+                                                  {
+                                                       display: block;                       
+                            
+                                                  }
+                                                    .buttoncf{
+                                                       display:none;                         
+                                                    } 
+                                                    .modelfullf
+                                                    {
+                                                       display: block;
+                                                       width:100%;
+                                                       height: 100%;  
+                                                                           
+                                                    }   
+                                                    .widthcf
+                                                    {
+                            
+                                                        max-width: 100%;
+                                                        
+                            
+                                                   padding:-1px;
+                                                        margin: -1px;
+                                                       
+                                                       
+                                                    }
+                                                    .formwf
+                                                    {
+                                                   width:95%
+                                                    }
+                                                   
+                            
+                            
+                            
+                                                    /***whatsapp**/
+                                                    .widthcwf
+                                                    {
+                            
+                                                        max-width: 100%;
+                                                        
+                            
+                                                   padding:-1px;
+                                                        margin: -1px;
+                                                        
+                                                       
+                                                       
+                                                    }
+                                                    .modalfullwf
+                                                    {
+                                                       display: block;
+                                                       width:100%;
+                                                     height: 100%;
+                                                    margin-top: 1px;
+                                                                           
+                                                    }   
+                                                    /***whatsapp**/
+                            
+                                                      }
+                            
+                            
+                            
