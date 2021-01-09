@@ -1,0 +1,21 @@
+@media only screen and (max-width:1190px)
+{
+    .inputsize
+    {
+       
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}
+@media only screen and (max-width:363px)
+{
+    .inputwidth
+    {
+       
+       width: 233px!important;
+    }
+    
+    
+}

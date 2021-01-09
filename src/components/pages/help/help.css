@@ -5,6 +5,19 @@
    color:black;
    margin-top: 200px;                      
 }
+@media only screen and (max-width: 638px) {
+   .buttonclosea   
+   {
+ margin-top: -98px!important;
+   }   
+ }
+ @media only screen and (max-width: 332px) {
+   .buttonfb   
+   {
+ padding-left: 58px!important;
+ margin-top: 20px!important;
+   }   
+ }
 
 
 

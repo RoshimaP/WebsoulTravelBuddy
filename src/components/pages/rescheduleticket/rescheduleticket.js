@@ -39,7 +39,7 @@ Verify your details, and   <span style={{color:"red"}}> Re-Schedule</span> your 
                                 </div> 
                                 <div>
                                 <div class="uk-inline">
-            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <span class="uk-form-icon" uk-icon="icon: tag" style={{fontSize:"24px",color:"black"}}></span>
             <input class="uk-input" placeholder="enter your ticket number" type="text"/>
         </div>                             
                               </div>                           
@@ -130,6 +130,7 @@ How it works?                            </div>
 <br/>
 </div>
 </div>
+
 <Footer/>
 </div>
    

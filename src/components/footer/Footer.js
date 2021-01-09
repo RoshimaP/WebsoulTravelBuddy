@@ -8,7 +8,7 @@ const FooterPage = () => {
     <div className="Footer" >
      <div style={{backgroundColor:"#1a2230"}}>
   
-   <br/>
+   <br/><br/>
    <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .subfooterdiv; delay: 300" >
   <div className="subfooterdiv uk-grid subfootergrid "  style={{margin:"auto",width:"96%",paddingBottom:"33px"}}>
     <div className="uk-width-1-6@m subfootergriddiv  "  style={{marginBottom:"10px"}} >

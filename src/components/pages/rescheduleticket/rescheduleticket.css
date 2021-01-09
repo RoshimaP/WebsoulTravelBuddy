@@ -1,18 +1,18 @@
 .fontstyle{
-                            font-size: 28px;
-                            font-family: 'Montserrat';
-                            color:#535559;                         
-                         }
-       @media only screen and (max-width: 1198px) {
-                            .firstgrid   
-                            {
-                          padding-left: 0px!important;
-                          
-                            }  
-                            .howitworkdiv
-                            {
-                               margin:auto;
-                               justify-content: center;
+  font-size: 28px;
+  font-family: 'Montserrat';
+  color:#535559;                         
+}
+@media only screen and (max-width: 1198px) {
+  .firstgrid   
+  {
+padding-left: 0px!important;
 
-                            } 
-                          }                        
+  }  
+  .howitworkdiv
+  {
+     margin:auto;
+     justify-content: center;
+
+  } 
+}                        

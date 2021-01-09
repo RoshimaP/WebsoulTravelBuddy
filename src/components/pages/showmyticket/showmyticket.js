@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../header/FixedHeader';
+import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 import '../showmyticket/showmyticket.css'
 import leftdivimg from '../../../assets/help/backgroundimg.jpg';
@@ -40,7 +40,7 @@ render()
                                 </div> 
                                 <div>
                                 <div class="uk-inline">
-            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <span class="uk-form-icon" uk-icon="icon: tag" style={{fontSize:"24px",color:"black"}}></span>
             <input class="uk-input" placeholder="enter your ticket number" type="text"/>
         </div>                             
                               </div>                           

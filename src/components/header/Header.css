@@ -1,39 +1,39 @@
 .Header {
-    background-color:#d84f57;
-   padding: 0px 42px;
-    
-  }
-  .NavRight
-  {
-    margin-right: 75px!important;
-  }
+  background-color:#d84f57;
+ padding: 0px 42px;
+  
+}
+.NavRight
+{
+  margin-right: 75px!important;
+}
 
-  /* .nav-style */
+/* .nav-style */
 /* { */
-  /* background-color: rgb(221, 78, 78); */
-  /* height: 50px; */
+/* background-color: rgb(221, 78, 78); */
+/* height: 50px; */
 /* } */
 .text-style
 {
-  color: #ffffff;
+color: #ffffff;
 }
 .link-style{
-  color: #b1babf;
+color: #b1babf;
 }
 
 .bus-ticket{
-  
-  padding: 3px 4px;
-  letter-spacing: .2px;
-  /* font-family: "Montserrat"; */
- }
+
+padding: 3px 4px;
+letter-spacing: .2px;
+/* font-family: "Montserrat"; */
+}
 .a-bus-ticket:hover
 {
-  cursor: pointer;
-  color:#dcc5c9;
+cursor: pointer;
+color:#dcc5c9;
 
 }
 .dropdowna
 {
-  border-radius: 0px;
+border-radius: 0px;
 }

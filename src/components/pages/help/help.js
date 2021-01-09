@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../header/Header';
+import Header from '../../header/FixedHeader';
 import Footer from '../../footer/Footer';
 import '../help/help.css'
 import leftdivimg from '../../../assets/help/backgroundimg.jpg';
@@ -62,104 +62,108 @@ render()
 
      {/**** modal*/}
      
-{/* <div className={"modal fade" + (this.state.modalState ? " show d-block" : " d-none")}  role="dialog" id="exampleModal"> */}
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   
-<div class="modal-dialog widthcf " role="document" style={{maxWidth:"742px"}}>
-
-{/** <button class="buttoncf close" type="button" style={{fontSize:"50px",color:"#fff",fontWeight:"100",marginLeft:"1px"}}  data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>*/}
-
-  <div class="modal-content  modalfull" style={{borderRadius:"8px",marginLeft:"1px",boxShadow:"none",border:"1px solid darkgrey"}} >
- 
-    <div class="modal-body borderrf uk-padding-remove" style={{}}>
-   {/*<div>
-    <button type="button" className="close" style={{fontSize:"30px",color:"black",fontWeight:"700",marginRight:"10px"}}  onClick={this.handleShow}>
-                                    <span>&times;</span>
-                                </button> 
-                                
-   </div>*/}
+  <div class="modal-dialog widthcf " role="document" style={{maxWidth:"679px"}}>
+  
+  
+  
+    <div class="modal-content  modalfull" style={{borderRadius:"8px",marginLeft:"1px",boxShadow:"none",border:"1px solid darkgrey"}} >
+   
+      <div class="modal-body borderrf uk-padding-remove" style={{}}>
     
-     <div className="uk-grid uk-child-width-1-2@l uk-child-width-1-2@m ">
-     {/* ,margin:"4px" */}
-         <div className="" style={{paddingLeft:"0px"}}> 
-          <img src={modalimg} style={{height:"480px"}} />                           
-           </div> 
-                                 
-           <div className="" style={{paddingLeft:"6px"}} uk-grid>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                                       <br/>
-                                       
-              <div>
-                <img src={redicon} />                          
-
-                  </div>   
-                  <div>
-                   <p className="" style={{width:"70%",color:"#d84e55"}}>
-                   Sign in to avail exciting discounts and cashbacks!!                         
-                      </p>                           
-                     </div>  
-                  <div>
-                  <div class="uk-margin" style={{}}>
-            <input class="uk-input" type="text" style={{fontSize:"14px",fontWeight:"600",fontFamily:"Montserrat", width:"80%",border:"1px solid black",borderRadius:"4px",height:"44px"}} placeholder="Enter your Mobile Number"/>
+      
+      <div class="uk-grid uk-child-width-1-2@l  uk-child-width-1-2@s uk-margin-remove" style={{padding:"4px",paddingRight:"14px"}}>
+        <div class="uk-padding-remove-right" style={{backgroundImage:'url(' +modalimg+ ')',backgroundRepeat:"no-repeat"}}>
+        {/* <img src={modalimg} style={{}} />   
+                             */} <br/>   
+  <div style={{fontSize:"22px",fontWeight:"700",color:"#fff",fontFamily:"Montserrat"}}>Unlock the</div>
+  <div style={{fontSize:"22px",fontWeight:"700",color:"#fff",fontFamily:"Montserrat"}}>Smarter Way to Travel</div>
         </div>
-                      </div>  
-                      <div>
-                     <button className="uk-button" disabled  style={{borderRadius:"3px",height:"44px",fontWeight:"700", width:"80%",textTransform:"capitalize", backgroundColor:"#d84e55",opacity:"0.5",color:"#fff"}}>
-                          GENERATE OTP(One Time Password)                       
-                         </button>                             
-                        </div>  
-                        <br/> 
-                        <div >
-                      <span style={{fontSize:"13px",fontWeight:"700"}}> OR,</span><span style={{fontSize:"13px"}}> Connect using social accounts                          
-                     </span>
-                          </div> 
-                          <br/>    
-                          <div className="uk-grid">
-                          <div>
-                              <button class="uk-button" style={{backgroundColor:"#fff",border:"1px solid ",width:"144px",borderRadius:"3px"}}>
-                                 <img src={google} style={{marginLeft:"-24px"}}   /><span style={{textTransform:"capitalize",fontSize:"12px",marginLeft:"28px",fontWeight:"600",color:"#ff3d00"}}>Google</span>                        
-                                        </button>                          
-                                  </div> 
-                            <div>
-                              <button class="uk-button" style={{backgroundColor:"#fff",border:"1px solid ",width:"144px",marginLeft:"-29px",borderRadius:"3px"}}>
-                                
-                                  <img src={facebook} style={{marginLeft:"-24px"}}   /> 
-
-                                  
-                                  <span style={{textTransform:"capitalize",fontSize:"12px",fontWeight:"600",color:"#485a96",marginLeft:"27px"}}>Facebook</span>                       
-
-                                  
-                                        </button>                          
-                                  </div>  
-                                                         
-                            </div> 
-                            <br/>  
-                            <div>
-                             <p style={{fontSize:"12px",color:"#9b9b9b"}}>
-                             By signing up, you agree to
-                        our Terms & Conditions and Privacy Policy                           
-                               </p>                           
-                          
-                             </div>          
-
+        <div class="" uk-grid style={{paddingLeft:"20px",paddingBottom:"100px"}} >
+        <button  type="button " style={{fontWeight:"100",fontSize:"40px",color:'black'}} class="close buttonclosea" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
+        <div style={{marginTop:"10px"}}>
+                  <img src={redicon} />                          
+  
+                    </div> 
+                   
+           <div style={{marginTop:"10px"}}>
+                     <p className="" style={{width:"78%",color:"#d84e55",fontWeight:"700",fontSize:"17px",fontFamily:"Montserrat"}}>
+                     Sign in to avail exciting discounts and cashbacks!!                         
+                        </p>                           
            </div>
-     </div>
-    
+           <div class="uk-margin" style={{}}>
+              <input class="uk-input" type="text" style={{fontSize:"14px",fontWeight:"600",fontFamily:"Montserrat", width:"92%",border:"1px solid black",borderRadius:"4px",height:"44px"}} placeholder="Enter your Mobile Number"/>
+          </div> 
+          <div>
+                       <button className="uk-button" disabled  style={{fontSize:"12px", fontFamily:"Montserrat", paddingLeft:"9px", borderRadius:"3px",height:"44px",fontWeight:"700", width:"92%",textTransform:"capitalize", backgroundColor:"#d84e55",opacity:"0.5",color:"#fff"}}>
+                            GENERATE OTP<span style={{fontWeight:"100",fontSize:"12px"}}>(One Time Password)</span>                      
+                           </button>                             
+              </div> 
+              
+                          <div >
+                            <div style={{textAlign:"center",marginTop:"10px"}}>
+                        <span style={{fontSize:"12px",fontWeight:"700",fontFamily:"Montserrat"}}> OR,</span><span style={{fontSize:"12px",fontFamily:"Montserrat"}}> Connect using social accounts                          
+                       </span></div>
+                </div> 
+  
+                  
+                            <div className="uk-grid" style={{marginTop:"10px"}}>
+                            <div>
+                                <button class="uk-button" style={{backgroundColor:"#fff",border:"1px solid ",width:"138px",borderRadius:"3px"}}>
+                                   <img src={google} style={{marginLeft:"-24px"}}   /><span style={{textTransform:"capitalize",fontSize:"12px",marginLeft:"28px",fontWeight:"600",color:"#ff3d00"}}>Google</span>                        
+                                          </button>                          
+                                    </div> 
+                              <div class="buttonfb">
+                                <button class="uk-button " style={{backgroundColor:"#fff",border:"1px solid ",width:"138px",marginLeft:"-29px",borderRadius:"3px"}}>
+                                  
+                                    <img src={facebook} style={{marginLeft:"-24px"}}   /> 
+  
+                                    
+                                    <span style={{textTransform:"capitalize",fontSize:"12px",fontWeight:"600",color:"#485a96",marginLeft:"27px"}}>Facebook</span>                       
+  
+                                    
+                                          </button>                          
+                                    </div>  
+                                                           
+                              </div> 
+                             
+                              <div>
+                               <div style={{fontSize:"10px",color:"#9b9b9b",textAlign:"center",fontFamily:"Montserrat",marginTop:"6px"}}>
+                               By signing up, you agree to
+                               <br/>
+                               
+                         <span style={{textAlign:"center",fontFamily:"Montserrat"}}> our < a href="" style={{fontWeight:"700"}}>Terms & Conditions</a> and <a href="" style={{fontWeight:"700"}}> Privacy Policy</a>                           
+                         </span> </div>                           
+                            
+                               </div>    
+  
+  
+  
+        </div>
+  
+      </div>
+      
+    </div>
+    </div>
   </div>
-  </div>
-</div>
-
-
-
-                </div>
-
+  
+  
+  
+                  </div>
+  
+  
 
 {/****modal */}
+
+
+
+
+
+
 
    <br/>
       <br/>

@@ -1,225 +1,227 @@
 .bg {
-     background-image: url("../../../assets/bus_tickets/image1.jpg");
-     height: 85vh;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-       }
-       .why_pool
+  background-image: url("../../../assets/bus_tickets/image1.jpg");
+  height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    .why_pool
 {
-    margin-left: 125px;
+ margin-left: 125px;
 }
 .first_card
 {
-  margin-top: -19px
+margin-top: -19px
 }
-       .buttonsearch
-       {
-         margin-top: 0px;
-       }
-       .onlineborderrightcontent
-       {
-         margin-top: 0px;
-       }
-       .backcont_a
-       {
-         font-size: "43px";
-       }
-       .backcont_b
-       {
-         font-size: "25px";
-       }
-       .onlineborder
-       {
-        border-right: 2px solid #cecece
-       }
-       
-       .listlinkbus
+    .buttonsearch
+    {
+      margin-top: 0px;
+    }
+    .onlineborderrightcontent
+    {
+      margin-top: 0px;
+    }
+    .backcont_a
+    {
+      font-size: "43px";
+    }
+    .backcont_b
+    {
+      font-size: "25px";
+    }
+    .onlineborder
+    {
+     border-right: 2px solid #cecece
+    }
+    
+    .listlinkbus
 {
-    color:#4e4e53;
-    font-family: 'Lato';   
-    font-size: 13px;
+ color:#4e4e53;
+ font-family: 'Lato';   
+ font-size: 13px;
 
-                  
+               
 }
 .contentsbus{
-  font-size: 16px;
-  color: #323232;
-  font-weight: 700;
-  font-family: Lato;
+font-size: 16px;
+color: #323232;
+font-weight: 700;
+font-family: Lato;
 } 
 .headingstyle
 {
-  color:  #323232;
-  font-size: 16px;
-  font-family: Lato;
-  font-weight: 700;
-  justify-content: left;
+color:  #323232;
+font-size: 16px;
+font-family: Lato;
+font-weight: 700;
+justify-content: left;
 
 }
 .contentstyle
 {
-  color:  #323232;
-  font-size: 14px;
-  font-family: Lato;
-  font-weight: 400;
-  justify-content: left;
+color:  #323232;
+font-size: 14px;
+font-family: Lato;
+font-weight: 400;
+justify-content: left;
 
 }
 .contentspbus{
-  font-size: 14px;
-  color:#232222;
-  font-weight: 400;
-  font-family: 'Lato';
+font-size: 14px;
+color:#232222;
+font-weight: 400;
+font-family: 'Lato';
 
 } 
-      @media screen and (max-width: 1198px) {
-        .onlineborder
-       {
-         border-right: 0px ;
-         text-align: center;
-       }
-      }
-      @media screen and (max-width: 958px) {
-        .headingstyle
+   @media screen and (max-width: 1198px) {
+     .onlineborder
+    {
+      border-right: 0px ;
+      text-align: center;
+    }
+   }
+   @media screen and (max-width: 958px) {
+     .headingstyle
 {
-  color:  #323232;
-  font-size: 16px;
-  font-family: Lato;
-  font-weight: 700;
-  justify-content: center;
+color:  #323232;
+font-size: 16px;
+font-family: Lato;
+font-weight: 700;
+justify-content: center;
 }
 .contentstyle
 {
-  color:  #323232;
-  font-size: 14px;
-  font-family: Lato;
-  font-weight: 400;
-  justify-content: center;
+color:  #323232;
+font-size: 14px;
+font-family: Lato;
+font-weight: 400;
+justify-content: center;
 
 }
 .margintop
 {
-  margin-top: 20px;
+margin-top: 20px;
 }
 
-      }
-      @media only screen and (max-width: 490px) {
-        .why_pool
-        {
-            margin:auto
-        }
-      }
-      
-      @media screen and (max-width: 1198px) {
-        .onlineborderrightcontent
-       {
-         margin-top: 20px ;
-         text-align: center;
-       }
-      }
-      
-      @media screen and (max-width: 682px) {
-        .second_card {
-          margin-top: 30px;
-        margin-right: 32px;
-        }
-      }
-      @media screen and (max-width: 900px) {
-        .backcont_a {
-          font-size:35px ;
-        }
-        .backcont_b {
-          font-size:20px ;
-        }
-      }
-      @media screen and (max-width: 396px) {
-        .buttonsearch {
-          margin-top:20px ;
-        }
-        
-      }
-      @media screen and (max-width: 958px) {
-        .topbusleft {
-         border-right: 0px!important ;
-        }
-        .topbusright
-        {
-          margin-top: 20px;
-        }
-        .topbusrightdivf
-        {
-          margin: auto!important;
-        }
-        
-      }
-       @media screen and (max-width: 759px) {
-        .first_card {
-         margin-top: 0px!important;
-        }
-      }
-      @media only screen and (min-width: 399px) {
-        .buttonsearch   
-        {
+   }
+   @media only screen and (max-width: 490px) {
+     .why_pool
+     {
+         margin:auto
+     }
+   }
+   
+   @media screen and (max-width: 1198px) {
+     .onlineborderrightcontent
+    {
+      margin-top: 20px ;
+      text-align: center;
+    }
+   }
+   
+   @media screen and (max-width: 682px) {
+     .second_card {
+       margin-top: 30px;
+     margin-right: 32px;
+     }
+   }
+   @media screen and (max-width: 900px) {
+     .backcont_a {
+       font-size:35px ;
+     }
+     .backcont_b {
+       font-size:20px ;
+     }
+   }
+   @media screen and (max-width: 396px) {
+     .buttonsearch {
+       margin-top:20px ;
+     }
+     
+   }
+   @media screen and (max-width: 958px) {
+     .topbusleft {
+      border-right: 0px!important ;
+     }
+     .topbusright
+     {
+       margin-top: 20px;
+     }
+     .topbusrightdivf
+     {
+       margin: auto!important;
+     }
+     
+   }
+    @media screen and (max-width: 759px) {
+     .first_card {
       margin-top: 0px!important;
-        }   
-      }
-      
-      @media screen and (max-width: 682px) {
-        .first_card {
-         margin: 35px;
-        }
-      }
-      @media screen and (max-width: 681px) {
-        .first_card {
-         margin-bottom: 10px;
-        }
-      }
-      /**footer**/
-      .Footer {
-        background-color:rgb(22, 20, 29);
-        
-    }
-    .title {
-        font-weight: 700;
-        margin-bottom: 19px;
-        color: #797979;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .footerhead
-    {
-      font-family: 'Lato';   
-        font-size: 12px      
-    }
-    .listlinkf
-    {
-        color:#d7d7d7;
-        font-family: 'Lato';   
-        font-size: 12px                    
-    }
-    .list-unstyled {
-        color: white;
-    }
-    p {
-        color: #b1babf;
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }
-    .link-style {
-        color: #d7d7d7;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    @media screen and (max-width: 958px) {
-      .footermargin {
-       margin-left: -40px!important;
-      }
-      .secondfootermargin
-      {
-        padding-left:0px!important;
-        margin-left:-34px!important;
-      }
-    }
+     }
+   }
+   @media only screen and (min-width: 399px) {
+     .buttonsearch   
+     {
+   margin-top: 0px!important;
+     }   
+   }
+   
+   @media screen and (max-width: 682px) {
+     .first_card {
+      margin: 35px;
+     }
+   }
+   @media screen and (max-width: 681px) {
+     .first_card {
+      margin-bottom: 10px;
+     }
+   }
+   /**footer**/
+   .Footer {
+     background-color:rgb(22, 20, 29);
+     
+ }
+ .title {
+     font-weight: 700;
+     margin-bottom: 19px;
+     color: #797979;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .footerhead
+ {
+   font-family: 'Lato';   
+     font-size: 12px      
+ }
+ .listlinkf
+ {
+     color:#d7d7d7;
+     font-family: 'Lato';   
+     font-size: 12px                    
+ }
+ .list-unstyled {
+     color: white;
+ }
+ p {
+     color: #b1babf;
+     font-family: Arial, Helvetica, sans-serif;
+     
+ }
+ .link-style {
+     color: #d7d7d7;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ @media screen and (max-width: 958px) {
+   .footermargin {
+    margin-left: -40px!important;
+   }
+   .secondfootermargin
+   {
+     padding-left:0px!important;
+     margin-left:-34px!important;
+   }
+ }
+
+ 
 
 
 
-      
+   

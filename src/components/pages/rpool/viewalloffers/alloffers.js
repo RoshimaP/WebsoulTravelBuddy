@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import walletcoin from '../../../../assets/rpool/img-offer-wallet-coin.svg';
 import offerbox from '../../../../assets/rpool/img-offer-box-50.svg';
 import coin from '../../../../assets/rpool/img-offer-coin.svg';
+import iconredbus from '../../../../assets/homepage/redbus_real_logo.png'
+
 class Alloffers extends Component {
     state = {}
     render() {
@@ -11,8 +13,10 @@ class Alloffers extends Component {
             <div>
                 <nav class="navbar navbar-expand-lg navbar-dark " style={{ backgroundColor: "#e9555d", }}>
                     <span className="uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-visible@l"></span>
-                    <a class="navbar-brand" href="/" style={{ fontFamily: "monospace", color: "white" }}>Travel Buddy</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} href="/homepage">
+           <img src={iconredbus} class=" " alt=" " style={{marginTop:"-46px",marginBottom:"-46px"}} width="75px" height="39px"/>
+         </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -69,11 +73,11 @@ function OffersCard() {
                 /*list of offer cards */
                 <div class="uk-animation-toggle contents   uk-width-1-3@l uk-margin-bottom">
                     <div className="uk-card uk-card-default uk-padding-small offers_cards uk-card-hover" style={{ borderRadius: "12px" }}>
-                        <p style={{ fontSize: "1.3em" }} className="sec_headings uk-align-left uk-width-1-1">{item.heading}</p>
-                        <p className=" uk-align-left uk-width-1-1 uk-padding-small uk-padding-remove-left uk-padding-remove-right contents" style={{ height: "30px", color: "#3e3e52", }}>{item.para}</p>
-                        <div className="uk-grid" >
+                        <p style={{ fontSize: "1.3em" ,marginBottom:"0px"}} className="sec_headings uk-align-left uk-width-1-1">{item.heading}</p>
+                        <p className=" uk-align-left uk-width-1-1 uk-padding-small uk-padding-remove-left uk-padding-remove-right contents" style={{ height: "30px",marginBottom:"10px", color: "#3e3e52", }}>{item.para}</p>
+                        <div className="uk-grid"  >
                             <div className="uk-float-left uk-width-1-2 "><br /><br /><a className="uk-width-1-1 " style={{ backgroundColor: "#38b87c", color: "white", borderRadius: "20px", fontSize: "1em", textTransform: "capitalize", fontFamily: "'Montserrat', sans-serif", padding: "0.3em" }}>{item.content}</a></div>
-                            <div className="uk-float-right uk-width-1-2"><img src={item.icons} style={{ height: "120px" }} className=" uk-align-right" /></div>
+                            <div className="uk-float-right uk-width-1-2" style={{marginTop:"-20px"}}><img src={item.icons} style={{ height: "120px" }} className=" uk-align-right" /></div>
                         </div>
                     </div>
 

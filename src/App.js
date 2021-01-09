@@ -4,6 +4,8 @@ import { Route,BrowserRouter,Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Footer from '../src/components/footer/Footer'
+import Footernew from './components/footer/Footernew'
+
 import Header from '../src/components/header/Header'
 import Homepage from '../src/components/pages/homepage/homepagenew'
 import Card from '../src/components/pages/homepage/card/Card'
@@ -20,6 +22,12 @@ import Help from '../src/components/pages/help/help.js'
 import Showmyticket from '../src/components/pages/showmyticket/showmyticket.js'
 import Reschedule from '../src/components/pages/rescheduleticket/rescheduleticket.js'
 import SMSand from '../src/components/pages/smsandemailticket/smsandemailticket'
+import Cancel from '../src/components/pages/cancelticket/cancelticket'
+import Bushire from '../src/components/pages/bushire/bushire'
+import KnowMoreTrackBus from '../src/components/pages/homepage/knowmoretrackbus/trackbusnew.js';
+//import KnowMoreTrackBus from '../src/components/pages/homepage/knowmoretrackbus/knowmoretrackbus.js';
+
+import Signin from '../src/components/pages/signin/signin'
 
 function App() {
     return (
@@ -45,6 +53,13 @@ function App() {
           <Route exact path="/Showmyticket" component={Showmyticket}/>
           <Route exact path="/Reschedule" component={Reschedule}/>
           <Route exact path="/SMSand" component={SMSand}/>
+          <Route exact path="/Cancel" component={Cancel}/>
+          <Route  exact path="/homepage/knowmoretrackbus" component={KnowMoreTrackBus}/>    
+          <Route exact path="/Signin" component={Signin}/>
+
+          <Route exact path="/Bushire" component={Bushire}/>
+
+
 
 
            </Switch>

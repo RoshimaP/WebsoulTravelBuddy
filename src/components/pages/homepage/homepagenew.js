@@ -29,6 +29,8 @@ import safetyplus from '../../../assets/homepage/safety_plus.svg'
 import { Link } from 'react-router-dom';
 import journey_for from '../../../assets/bus_tickets/journey_for.jpg';
 import amazon_pay from '../../../assets/bus_tickets/amazon_pay.jpg';
+import "../../../components/pages/homepage/offers/offers.css"
+
 {/**function openWin() {
    window.open("https://www.w3schools.com");
  }**/}
@@ -119,7 +121,7 @@ class Homepage extends Component {
      <br/>
      <div className="" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .gridf; delay: 300" >
      <div class="    gridf"  uk-grid  style={{justifyContent:"center",alignItems:"center",marginTop:"-155px"}}>
-     <div class="uk-grid cardf " style={{margin:"auto",width:"44%",backgroundColor:"#fff5e5",top:"320px"}}>
+     <div class="uk-grid cardf " style={{margin:"auto",width:"44%",backgroundColor:"#fff5e5",top:"320px",boxShadow:"0 3px 7px 0 rgba(0,0,0,.28)"}}>
 <div class="imgdiv" style={{paddingTop:"18px",paddingLeft:"20px"}}>
 <img src={plusimg} class="uk-align-center " alt=" " style={{height:"70px"}} />
 
@@ -161,7 +163,12 @@ class Homepage extends Component {
 
        </div>
     {/***3 div grid */}
-   {/**introdusing safety */}
+
+
+
+
+
+{/**introdusing safety */}
     <br/>
     <br/>
     <div style={{width:"83%",margin:"auto",border:"1px solid #ddd"}}>
@@ -281,8 +288,9 @@ KNOW MORE
        </h3>
       
        <p style={{paddingTop:"7px",marginBottom:"21px", width:"83%", fontSize:"14px",color:"#4a4a4a",fontFamily:"Montserrat"}}>Track your bus with our ‘Track My Bus’ feature and know the exact location in real-time.Stay informed and keep your family informed!</p>
-       
-       <button  style={{border:"1px solid #39f",color:"#39f",fontFamily:"Montserrat",padding:"6px 17px",fontSize:"13px"}}> Know more</button>
+       <Link  style={{border:"1px solid #39f",color:"#4a4a4a",fontFamily:"Montserrat",padding:"6px 17px",fontSize:"13px"}}  to="/homepage/knowmoretrackbus">Know more</Link>
+
+       {/* <button  style={{border:"1px solid #39f",color:"#39f",fontFamily:"Montserrat",padding:"6px 17px",fontSize:"13px"}}> Know more</button> */}
 
        </div>
        
@@ -399,13 +407,16 @@ KNOW MORE
                                  <div class="uk-margin-small-top">
                                     <div class="animated slideInUp slow uk-grid">
                                        <div>
+                                          <a href="https://apps.apple.com/in/app/redbus/id733712604" target="_blank">
                                        <img src={appleicon} class=" " alt=" " style={{width:"40px",height:"40px"}} />
-
+                                             </a>
 
                                        </div>
                                        <div style={{paddingLeft:"1px"}}>
-                                       <img src={googleplay} class=" " alt=" " style={{width:"70px",height:"40px"}} />
+                                       <a target="_blank" href="https://play.google.com/store/apps/details?id=in.redbus.android&hl=en">
 
+                                       <img src={googleplay} class=" " alt=" " style={{width:"70px",height:"40px"}} />
+                                       </a>
 
                                        </div>
 
@@ -513,8 +524,9 @@ KNOW MORE
   <div className="uk-grid uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .awardsdiv; delay: 300; repeat: true" style={{width:"90%",justifyContent:"center",alignItems:"center",margin:"auto"}}>
      <div className="awardsdiv" uk-grid >
         <div >
+           <a target="_blank" href="https://www.business-standard.com/article/companies/bs-annual-awards-saluting-the-spirit-of-entrepreneurship-114033100015_1.html">
         <img src={business} class=" uk-align-center" alt=" " style={{}} />
-
+        </a>
        </div>
        <div >
        <p style={{fontSize:"14px",fontFamily:"Montserrat", width:"51%",margin:"auto",textAlign:"center",letterSpacing:"3px",color:"#4a4a4a"}}>
@@ -525,7 +537,10 @@ KNOW MORE
      </div>
      <div className="awardsdiv" uk-grid style={{marginTop:"21px"}} >
         <div >
+        <a target="_blank" href="https://thebrandtrustreport.wordpress.com/tag/redbus-in/">
+
         <img src={brand} class=" uk-align-center" alt=" " style={{}} />
+        </a>
 
        </div>
        <div >
@@ -538,7 +553,10 @@ KNOW MORE
     
      <div className="awardsdiv" uk-grid >
         <div >
+        <a target="_blank" href="https://eyefortravelblog.blogspot.in/2014/04/winners-of-mobile-innovation-in-travel.html">
+
         <img src={eye} class=" uk-align-center" alt=" " style={{}} />
+        </a>
 
        </div>
        <div >
@@ -568,16 +586,20 @@ KNOW MORE
   <div className="uk-grid uk-child-width-1-3@l uk-child-width-1-3@m uk-child-width-1-3@s " style={{margin:"auto",width:"80%",paddingBottom:"53px"}}>
     <div className="" uk-grid>
     <div>
+       <a target="_blank" href="https://www.redbus.co/">
      <img src={colombia} class=" uk-align-center" alt=" " style={{}} />
-     </div>
+    
+     </a> </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
        COLOMBIA
      </div>
      </div>
      <div className="" uk-grid>
      <div>
-     <img src={india} class=" uk-align-center" alt=" " style={{}} />
+     <a target="_blank" href="https://www.redbus.in/">
 
+     <img src={india} class=" uk-align-center" alt=" " style={{}} />
+     </a>
      </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
        INDIA
@@ -585,8 +607,10 @@ KNOW MORE
      </div>
      <div className="" uk-grid>
      <div>
-     <img src={indonesia} class=" uk-align-center" alt=" " style={{}} />
+     <a target="_blank" href="https://www.redbus.id/">
 
+     <img src={indonesia} class=" uk-align-center" alt=" " style={{}} />
+     </a>
      </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
        INDONESIA
@@ -594,7 +618,10 @@ KNOW MORE
      </div>
      <div className="" uk-grid>
      <div>
+     <a target="_blank" href="https://www.redbus.my/">
+
      <img src={malaysia} class=" uk-align-center" alt=" " style={{}} />
+     </a>
 
      </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
@@ -603,7 +630,10 @@ KNOW MORE
      </div>
      <div className="" uk-grid>
      <div>
+     <a target="_blank" href="https://www.redbus.pe/">
+
      <img src={peru} class=" uk-align-center" alt=" " style={{}} />
+     </a>
 
      </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
@@ -612,7 +642,10 @@ KNOW MORE
      </div>
      <div className="" uk-grid>
      <div>
+     <a target="_blank" href="https://www.redbus.sg/">
+
      <img src={singapore} class=" uk-align-center" alt=" " style={{}} />
+     </a>
 
      </div>
      <div className=" uk-text-center" style={{color:"#737373",marginTop:"-43px"}}>
@@ -673,27 +706,27 @@ KNOW MORE
                  <div class="listlinksh" style={{color:"#444343",fontWeight:"700"}}>Top Bus Routes</div>
              </li>
              <li style={{marginBottom:"6px"}}>
-             <a class="listlinksh" href="" style={{color:"#444343"}} >
+             <a class="listlinksh" target="_blank" href="https://www.redbus.in/bus-tickets/hyderabad-to-bangalore" style={{color:"#444343"}} >
              Hyderabad to Bangalore Bus
                    </a>
              </li>
              <li style={{marginBottom:"6px"}}>
-             <a class="listlinksh" href="" >
+             <a class="listlinksh" target="_blank" href="https://www.redbus.in/bus-tickets/bangalore-to-chennai" >
              Bangalore to Chennai Bus
                    </a>
              </li>
              <li style={{marginBottom:"6px"}}>
-             <a class="listlinksh" href="" >
+             <a class="listlinksh" target="_blank" href="https://www.redbus.in/bus-tickets/pune-to-bangalore" >
              Pune to Bangalore Bus
                    </a>
              </li>
              <li style={{marginBottom:"6px"}}>
-             <a class="listlinksh" href="" >
+             <a class="listlinksh" target="_blank" href="https://www.redbus.in/bus-tickets/mumbai-to-bangalore" >
              Mumbai to Bangalore Bus
                    </a>
              </li>
              <li style={{marginBottom:"6px"}}>
-             <a class="listlinksh" href="" >
+             <a class="listlinksh" target="_blank" href="https://www.redbus.in/bus-tickets/routes-directory" >
              More >
                    </a>
              </li>
@@ -843,35 +876,35 @@ KNOW MORE
     <p class="footerht">Top Operators</p>
  <div class="uk-grid uk-margin-remove" >
    <div class="uk-padding-remove"  style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">SRS Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/srs-travels-srs" style={{padding:"10px"}} class=" listlinksh">SRS Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">Evacay Bus&nbsp;</a>
+   <a href="https://www.redbus.in/travels/evacay-bus" style={{padding:"10px"}} class=" listlinksh">Evacay Bus&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">Kallada Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/kallada-travels-kallada" style={{padding:"10px"}} class=" listlinksh">Kallada Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">KPN Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/kpn-travels-kpn" style={{padding:"10px"}} class=" listlinksh">KPN Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">Orange Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/orange-travels-orange" style={{padding:"10px"}} class=" listlinksh">Orange Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">Parveen Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/parveen-travels" style={{padding:"10px"}} class=" listlinksh">Parveen Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">Rajadhani Express&nbsp;</a>
+   <a href="https://www.redbus.in/travels/parveen-travels" style={{padding:"10px"}} class=" listlinksh">Rajadhani Express&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
-   <a href="" style={{padding:"10px"}} class=" listlinksh">VRL Travels&nbsp;</a>
+   <a href="https://www.redbus.in/travels/rajdhani-express" style={{padding:"10px"}} class=" listlinksh">VRL Travels&nbsp;</a>
 
    </div>
    <div class="uk-padding-remove" style={{borderRight:"1px solid #8e8d8d"}}>
@@ -1005,7 +1038,7 @@ KNOW MORE
 
 </div>
 <br/>
-<a href=""><p class="footerhb">All Operators ></p></a>
+<a target="_blank" href="https://www.redbus.in/travels/operators-directory"><p class="footerhb">All Operators ></p></a>
 
     </div>
   

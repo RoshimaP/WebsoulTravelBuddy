@@ -1,0 +1,122 @@
+.widthclass{
+    width:70%;
+}
+
+
+@media only screen and (max-width:960px)
+{
+    .topclass
+    {
+     padding-top : 30px!important;      
+        
+    }
+}
+
+@media only screen and (max-width:302px)
+{
+    .buttonclass
+    {
+        
+        font-size : 13px;   
+
+        
+    }
+    .widthclass{
+        width:90%;
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .paragraphclass
+    {
+     width : 100%;    
+       
+        
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    topclass
+    {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+        margin-left:  0px!important;                  
+    }
+    }
+   
+@media only screen and (max-width: 450px) {
+listlinksh
+{
+    color:#444343;
+    font-family: 'Montserrat';   
+    font-size: 13px                    
+}
+}
+@media only screen and (max-width: 959px) {
+                               
+    .subfootergrid
+    {
+      text-align: center; 
+      margin-left: 0px;                         
+    } 
+    .subfootergriddiv     
+    {
+        margin-left: -30px;                        
+    }            
+}
+
+
+
+
+@media only screen and (max-width:1190px)
+{
+    .buttonsize
+    {
+       
+        
+        text-align: center;
+        align-items: center;
+           
+        
+    }
+    .textpara
+    {
+        width:100%;
+        text-align: center;
+    }
+    
+    
+}
+@media only screen and (max-width:1190px)
+{
+    .ticketclass{
+        padding-bottom: 10px ;
+        
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .bookticket{
+        
+        justify-content: center;
+        
+    }
+}
+@media only screen and (max-width:1200px)
+{
+    .smartboardclass
+    {
+        
+        justify-content: center;
+        
+    }
+}
+@media only screen and (max-width:1190px)
+{
+    .buttonclass{
+        align-items: center ;
+        justify-content: center;
+        float: center;
+        
+    }
+}

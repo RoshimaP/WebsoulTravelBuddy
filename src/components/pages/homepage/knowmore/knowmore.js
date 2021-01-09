@@ -29,7 +29,7 @@ function KonowMore() {
         return (
              <div>
                   {/*<Header/>*/}
-                  
+                  <Header/>
                           
                          <br/>
                          <br/>
@@ -38,7 +38,7 @@ function KonowMore() {
           <i class='fas fa-arrow-left' style={{fontSize:"36px",width:"1px"}}></i>
         </div>
         <div>
-          <h1 className="" style={{fontSize:"50px",fontWeight:"500",color:"#3e3e52"}}>Safety + : Covid 19 measures by redBuss</h1>                          
+          <h1 className="" style={{fontSize:"50px",fontWeight:"500",color:"#3e3e52"}}>Safety + : Covid 19 measures by redBus</h1>                          
 
         </div>
 
@@ -57,15 +57,15 @@ function KonowMore() {
 
  {/****introducing safety */}
        
-          <div class="uk-grid " style={{margin:"auto",width:"48%",backgroundColor:"#f8d48f",boxShadow:"0 3px 7px 0 rgba(0,0,0,.28)",top:"320px"}}>
-<div style={{paddingTop:"18px"}}>
-<img src={safety} class="uk-align-center " alt=" " style={{height:"70px"}} />
+ <div class="uk-grid-collapse uk-grid" style={{margin:"auto",width:"578px",height: "104px", borderRadius: "4px",backgroundColor:"#f8d48f",boxShadow:"0 3px 7px 0 rgba(0,0,0,.28)",top:"320px"}}>
+    <div style={{paddingTop:"18px",width:"15%",justifyContent:"center",alignItems:"center"}}>
+      <img src={safety} class=" " alt=" " style={{height:"70px",marginBottom:"10px",marginLeft:"15px"}} />
 
-</div>
-<div style={{paddingLeft:"19px",paddingTop:"23px"}}>
- <div style={{fontSize:"16px",fontWeight:"700",color:"#3d3d3d"}}>INTRODUCING SAFETY+</div>
- <div style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>With Safety+ we have brought in a set of measures to ensure you travel safely</div>
-</div>
+    </div>
+  <div style={{paddingLeft:"19px",paddingTop:"23px",width:"85%"}}>
+      <div style={{fontFamily: "Montserrat",fontSize:"16px",fontWeight:"700",color:"#3d3d3d"}}>INTRODUCING SAFETY+</div>
+      <p style={{fontFamily: "Montserrat",fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>With Safety+ we have brought in a set of measures to ensure you travel safely</p>
+  </div>
 
 </div>
 <br/>
@@ -77,14 +77,14 @@ function KonowMore() {
                             <br/>
                             <br/>
                             <div class="">
-       <p className="uk-flex uk-flex-left uk-margin-medium-left" style={{fontSize:"19px",color:"#3d3d3d"}}>Bus Operator Measures</p>                          
+       <p className="uk-flex uk-flex-left uk-margin-medium-left" style={{fontFamily: "Montserrat",fontWeight:"700",fontSize:"19px",color:"#3d3d3d"}}>Bus Operator Measures</p>                          
 
    </div>
                             <br/>
                             <br/>
 <div className="uk-grid uk-child-width-1-3@l uk-child-width-1-3@m">
-<div>
-<div className="uk-grid uk-child-width-1-2">
+<div className="" style={{}}>
+<div className="uk-grid uk-child-width-1-2" style={{fontFamily: "Montserrat"}}>
   <div>
   <img src={staffwith} class="uk-align-center " alt=" " style={{height:"70px"}} />
 
@@ -92,12 +92,12 @@ function KonowMore() {
   </div>
   <div>
     <div className="uk-grid">
-       <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Staff with Masks</p>                        
+       <div className="" style={{}} >
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Staff with Masks</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>We require all our bus staff to strictly wear approved masks at all time during the journey.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>We require all our bus staff to strictly wear approved masks at all time during the journey.
 </p>
          </div>                       
                                  
@@ -119,11 +119,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Sanitized Bus</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Sanitized Bus</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>All our buses are deep cleaned and disinfected before and after every trip.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>All our buses are deep cleaned and disinfected before and after every trip.
 </p>
          </div>                       
                                  
@@ -144,13 +144,13 @@ function KonowMore() {
 
   </div>
   <div>
-    <div className="uk-grid">
+    <div className="uk-grid" style={{}}>
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Hand Sanitizers Provided</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Hand Sanitizers Provided</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>We are equipping all our buses with hand sanitizers to help you stay disinfected.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>We are equipping all our buses with hand sanitizers to help you stay disinfected.
 </p>
          </div>                       
                                  
@@ -174,11 +174,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Regular Temperature Checks</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Regular Temperature Checks</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>Our bus drivers and service personnel are subject to temperature checks before every trip.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>Our bus drivers and service personnel are subject to temperature checks before every trip.
 </p>
          </div>                       
                                  
@@ -200,11 +200,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>No Blankets / Linens</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>No Blankets / Linens</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>For your safety, we shall not be providing any blankets or linens. You are requested to carry your own.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>For your safety, we shall not be providing any blankets or linens. You are requested to carry your own.
 </p>
          </div>                       
                                  
@@ -227,11 +227,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Passenger Thermal Screening</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Passenger Thermal Screening</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>All passengers will be subject to thermal screening in order to allow only asymptomatic people to travel
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>All passengers will be subject to thermal screening in order to allow only asymptomatic people to travel
 </p>
          </div>                       
                                  
@@ -256,7 +256,7 @@ function KonowMore() {
 <div>
   
 <div class="">
-       <p className="uk-flex uk-flex-left uk-margin-medium-left" style={{fontSize:"19px",color:"#3d3d3d"}}>Passenger Guidelines</p>                          
+       <p className="uk-flex uk-flex-left uk-margin-medium-left" style={{fontFamily: "Montserrat",fontSize:"19px",color:"#3d3d3d"}}>Passenger Guidelines</p>                          
 
    </div> <br/>
   <br/>
@@ -271,11 +271,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Mandatory Masks</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Mandatory Masks</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>Proper masks are mandatory for all passengers. Handkerchiefs /other cloth items are not permitted as masks..
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>Proper masks are mandatory for all passengers. Handkerchiefs /other cloth items are not permitted as masks..
 </p>
          </div>                       
                                  
@@ -297,11 +297,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Do not travel with symptoms</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Do not travel with symptoms</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>Passengers are advised to refrain from travel if they show Covid-19 Symptoms. In such an event, the passenger risks de-boarding.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>Passengers are advised to refrain from travel if they show Covid-19 Symptoms. In such an event, the passenger risks de-boarding.
 </p>
          </div>                       
                                  
@@ -324,11 +324,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Carry your own blankets</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Carry your own blankets</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>In an effort to maintain utmost hygiene, you are requested to carry your own blankets and linens as we will not be providing these.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>In an effort to maintain utmost hygiene, you are requested to carry your own blankets and linens as we will not be providing these.
 </p>
          </div>                       
                                  
@@ -351,11 +351,11 @@ function KonowMore() {
   <div>
     <div className="uk-grid">
        <div className="" >
-           <p style={{color:"#3d3d3d",fontSize:"16px",fontWeight:"700"}}>Follow Mandatory Travel Guidelines</p>                        
+           <p style={{color:"#3d3d3d",fontSize:"14px",fontWeight:"700",fontFamily: "Montserrat"}}>Follow Mandatory Travel Guidelines</p>                        
 
          </div>  
          <div>
-      <p style={{fontSize:"14px",fontWeight:"400",color:"#3d3d3d"}}>It is mandatory to follow the travel guidelines of your source and destination state for travel. View Details.
+      <p style={{marginTop: "9px",letterSpacing: "-.16px",fontSize:"12px",fontWeight:"400",color:"#3d3d3d",fontFamily: "Montserrat"}}>It is mandatory to follow the travel guidelines of your source and destination state for travel. View Details.
 </p>
          </div>                       
                                  
@@ -373,6 +373,7 @@ function KonowMore() {
 <br/>
 <br/>
 </div>
+
 
 {/***passenger guide lines */}
 
@@ -504,7 +505,7 @@ function KonowMore() {
                     
                     
                         
-                        <p className="uk-padding-small" style={{color:"#3e3e52",fontSize:"13px"}}>Use and carry a hand sanitizer</p>
+                        <p className="uk-padding-small" style={{fontFamily: "Montserrat",color:"#3e3e52",fontSize:"13px"}}>Use and carry a hand sanitizer</p>
                    
                 </div>
             </li>

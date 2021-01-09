@@ -1,0 +1,44 @@
+.h {
+    background-color: rgb(206, 201, 194);
+    /* height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+      }
+
+   .outstation:hover{
+     border-color: blue;
+     
+   }   
+
+   .toggle:hover drp{
+     background-color:red;
+     
+   }
+  
+   .buttonTrue {
+   
+    background-color:blue;
+   }
+  
+  .buttonFalse {
+    
+    background-color:white;
+    
+  }
+  .journeytype{
+background-color: white; 
+    margin-top:10px;
+    margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  }
+  .journeytype:hover{
+    background-color: white; 
+    margin-top:10px;
+    margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border:2px solid rgb(18, 123, 209);
+
+  }

@@ -54,14 +54,20 @@ function DatePickers() {
 
 class  Bus_Tickets extends Component {
   
- 
+  handleClick(){
+    // their APi is not documented well
+    this.datePicker._showDatePickerPopup()
+  }
   render()
   {
   return (
   <div class="" style={{width:"fit-content"}}>
     <Header/>
       {/*<Header/>*/}
-     
+      {/* <DatePickers
+        label='Start date'
+        onSelectDate={ date => this.setState({ value: date }) }
+        componentRef={instance => this.datePicker = instance} /> */}
   
      
       <div  className="" style={{backgroundColor:"#4a4a4a",height:"28px",fontFamily:"Lato,sans-serif"}}>
@@ -162,7 +168,7 @@ class  Bus_Tickets extends Component {
      <br/>
      
      <div class=" " uk-grid  style={{justifyContent:"center",alignItems:"center",marginTop:"-155px",marginBottom:"8px"}}>
-     <div class="uk-grid " style={{padding:"5px", margin:"auto",width:"40%",backgroundColor:"#fff5e5",boxShadow:"0 3px 7px 0 rgba(0,0,0,.28)",top:"320px"}}>
+     <a href="https://m.redbus.in/preregister" target="_blank" class="uk-grid " style={{padding:"5px", margin:"auto",width:"40%",backgroundColor:"#fff5e5",boxShadow:"0 3px 7px 0 rgba(0,0,0,.28)",top:"320px"}}>
 <div style={{paddingTop:"18px"}}>
 <img src={bellimg} class=" " alt=" " style={{height:"64px"}} />
      
@@ -175,23 +181,25 @@ class  Bus_Tickets extends Component {
 <div style={{paddingLeft:"11px",paddingTop:"61px"}} >
   <button class="uk-button" style={{paddingRight:"10px",marginBottom:"10px",paddingLeft:"10px",fontWeight:"700",borderRadius:"2px", height:"20px",backgroundColor:"#d84e55",color:"#fff",lineHeight:"1px",fontSize:"12px"}} >Register Now </button>
 </div>
-</div>
+</a>
    <div className="uk-grid uk-child-width-1-2"  style={{justifyContent:"center",alignItems:"center",marginLeft:"1px"}}>
-    <div class="first_card uk-card uk-card-default uk-card-body" style={{height:"244px",width:"350px",paddingTop:"21px",boxShadow:"0 1px 10px #c3c3c3"}}>
+
+    <a href="/offers" target="_blank" class="first_card uk-card uk-card-default uk-card-body" style={{height:"244px",width:"350px",paddingTop:"21px",boxShadow:"0 1px 10px #c3c3c3"}}>
         
     <h3 class="uk-card-title" style={{fontFamily:'Lato',fontSize:14,fontWeight:400,color:"#000",display:"flex",justifyContent:"center",alignItems:"center",marginTop:"-11px"}}>Save up to Rs 150 for bus tickets</h3>
     <img src={journey_for} class=" " alt=" " />
      <p className="uk-text-bold" style={{fontFamily:'Lato',color:"#000",fontSize:15,WebkitTextStrokeWidth:"thin"}}>Limited Period Offer</p>
                 <div><p style={{fontFamily:'Lato',fontSize:14,color:"#000",display:"flex",justifyContent:"center",alignItems:"center"}}>Use code FIRST</p></div>
-    </div>
+    </a> 
 
-    <div class="second_card uk-card uk-card-default uk-card-body uk-margin-large-left" style={{height:"262px",width:"350px",paddingTop:"21px",boxShadow:"0 1px 10px #c3c3c3",paddingLeft:"14px",paddingRight:"14px"}}>
+
+    <a href="/offers" target="_blank" class="second_card uk-card uk-card-default uk-card-body uk-margin-large-left" style={{height:"262px",width:"350px",paddingTop:"21px",boxShadow:"0 1px 10px #c3c3c3",paddingLeft:"14px",paddingRight:"14px"}}>
     <h3 class="uk-card-title" style={{fontFamily:'Lato', fontSize:14,fontWeight:400,color:"#000",display:"flex",textAlign:"center",marginTop:"-11px"}}>Win Rs 10 to Rs 300 on minimum
      purchase of Rs 300.</h3>
     <img src={amazon_pay} class=" " alt=" " style={{marginTop:"-11px"}} />;
     <p className="uk-text-bold" style={{fontFamily:'Lato',color:"#000",fontSize:15,WebkitTextStrokeWidth:"thin"}}>Limited Period Offer</p>
              <p style={{fontFamily:'Lato',fontSize:14,color:"#000",display:"flex",justifyContent:"center",alignItems:"center"}}>AMAZON pay offer</p>
-    </div>
+    </a>
     </div>
 </div>
    <br/> 
@@ -505,20 +513,20 @@ Booking a bus or making an online booking has never been this easy thanks to red
        
        <MDBDropdown  style={{backgroundColor:"#fff"}}>
       <MDBDropdownToggle className="" style= {{top:"5px",marginLeft:"-25px",backgroundColor:"#fff", textTransform:"Capitalize", boxShadow:"none",border:"1px solid grey", padding:"0px",width:"116px",marginTop:"11px"}}  caret color="#fff" >
-       <span class="text-primary">Ahmedabad </span> 
+       <span class="text-primary" style={{fontSize:"12px"}}>Ahmedabad </span> 
       </MDBDropdownToggle>
       <MDBDropdownMenu basic style= {{}}>
         <MDBDropdownItem active href="#">
-        <span class="text-white">Ahmedabad</span> 
+        <span class="text-white" style={{fontSize:"12px",fontWeight:"100"}}>Ahmedabad</span> 
           </MDBDropdownItem>
         <MDBDropdownItem >
-         <span class="text-primary">Bangalore</span> 
+         <span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Bangalore</span> 
         </MDBDropdownItem>
-        <MDBDropdownItem ><span class="text-primary">Chennai</span> </MDBDropdownItem>
-        <MDBDropdownItem ><span class="text-primary">Coimbatore</span> </MDBDropdownItem>
-        <MDBDropdownItem ><span class="text-primary">Delhi</span> </MDBDropdownItem>
-        <MDBDropdownItem ><span class="text-primary">Goa</span> </MDBDropdownItem>
-        <MDBDropdownItem ><span class="text-primary">Hyderabad</span> </MDBDropdownItem>
+        <MDBDropdownItem ><span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Chennai</span> </MDBDropdownItem>
+        <MDBDropdownItem ><span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Coimbatore</span> </MDBDropdownItem>
+        <MDBDropdownItem ><span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Delhi</span> </MDBDropdownItem>
+        <MDBDropdownItem ><span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Goa</span> </MDBDropdownItem>
+        <MDBDropdownItem ><span class="text-primary" style={{fontSize:"12px",fontWeight:"100"}}>Hyderabad</span> </MDBDropdownItem>
 
 
 
@@ -543,7 +551,8 @@ Booking a bus or making an online booking has never been this easy thanks to red
         
           <td class="  uk-padding-remove-bottom" style={{fontWeight:"400"}}>Ahmedabad to Udaipur</td>
           <td class="uk-padding-remove-bottom " style={{fontWeight:"400"}}>INR 200</td>
-          <td  class="uk-padding-remove-bottom "><button style={{backgroundColor:"#f7f7f7",border:"1px solid #d74f55",color:"#d74f55",padding:"3px",paddingLeft:"5px",paddingRight:"5px"}}>Book Now</button></td>
+          {/* onClick={e => this.DatePickers()} */}
+          <td  class="uk-padding-remove-bottom "><button  style={{backgroundColor:"#f7f7f7",border:"1px solid #d74f55",color:"#d74f55",padding:"3px",paddingLeft:"5px",paddingRight:"5px"}}>Book Now</button></td>
         </tr>
         <tr>
          
@@ -640,27 +649,27 @@ Booking a bus or making an online booking has never been this easy thanks to red
   </p>
   <div class="uk-grid uk-child-width-1-3@l uk-child-width-1-3@m ">
     <div className="">
-    <a href="" >
+    <a href="https://www.redbus.in/bus-tickets/bangalore-to-hyderabad" >
 
       <p className="contentstyle" style={{}}>
       Bangalore To Hyderabad Bus
       </p>
       </a>
-      <a href="" >
+      <a href="https://www.redbus.in/bus-tickets/pune-to-goa" >
 
       <p className="contentstyle" style={{}}>
       Pune To Goa Bus
             </p>
             </a>
 
-            <a href="" >
+            <a href="https://www.redbus.in/bus-tickets/bangalore-to-goa" >
 
       <p className="contentstyle" style={{}}>
       Bangalore To Goa Bus
             </p>
             </a>
 
-            <a href="" >
+            <a href="https://www.redbus.in/bus-tickets/delhi-to-shimla" >
 
       <p className="contentstyle" style={{}}>
       Delhi To Shimla Bus
@@ -879,7 +888,7 @@ Booking a bus or making an online booking has never been this easy thanks to red
                  <div class="listlinkbus" style={{color:"rgb(0,0,0)",fontWeight:"700",fontSize:"13px",WebkitTextStrokeWidth:"thin",marginBottom:"10px"}}>Top Bus Routes</div>
            
              <li style={{marginBottom:"10px"}}>
-             <a class="listlinkbus" href="" style={{color:"#444343",}} >
+             <a class="listlinkbus" href="https://www.redbus.in/bus-tickets/hyderabad-to-bangalore" style={{color:"#444343",}} >
              Hyderabad to Bangalore Bus
                    </a>
              </li>
@@ -889,17 +898,17 @@ Booking a bus or making an online booking has never been this easy thanks to red
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-             <a class="listlinkbus" href=""style={{}} >
+             <a class="listlinkbus" href="https://www.redbus.in/bus-tickets/pune-to-bangalore"style={{}} >
              Pune to Bangalore Bus
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-             <a class="listlinkbus" href=""  style={{}}>
+             <a class="listlinkbus" href="https://www.redbus.in/bus-tickets/mumbai-to-bangalore"  style={{}}>
              Mumbai to Bangalore Bus
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-             <a class="listlinkbus" href=""style={{}} >
+             <a class="listlinkbus" href="https://www.redbus.in/bus-tickets/routes-directory"style={{}} >
              More >>
                    </a>
              </li>
@@ -913,27 +922,27 @@ Booking a bus or making an online booking has never been this easy thanks to red
                  <div class="listlinkbus" style={{color:"rgb(0,0,0)",fontWeight:"700",fontSize:"13px",WebkitTextStrokeWidth:"thin",marginBottom:"10px"}}>Top Cities</div>
              </li>
              <li style={{marginBottom:"10px"}}>
-            <a class="listlinkbus" href="" style={{marginBottom:"10px"}} >
+            <a class="listlinkbus" href="https://www.redbus.in/buses/hyderabad-bus-tickets" style={{marginBottom:"10px"}} >
              Hyderabad Bus Tickets
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-            <a class="listlinkbus" href=""style={{marginBottom:"10px"}} >
+            <a class="listlinkbus" href="https://www.redbus.in/buses/bangalore-bus-tickets"style={{marginBottom:"10px"}} >
              Bangalore Bus Tickets
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-            <a class="listlinkbus" href=""style={{marginBottom:"10px"}} >
+            <a class="listlinkbus" href="https://www.redbus.in/buses/chennai-bus-tickets"style={{marginBottom:"10px"}} >
              Chennai Bus Tickets
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-            <a class="listlinkbus" href=""style={{marginBottom:"10px"}} >
+            <a class="listlinkbus" href="https://www.redbus.in/buses/chennai-bus-tickets"style={{marginBottom:"10px"}} >
              Pune Bus Tickets
                    </a>
              </li>
              <li style={{marginBottom:"10px"}}>
-            <a class="listlinkbus" href=""style={{marginBottom:"10px"}} >
+            <a class="listlinkbus" href="https://www.redbus.in/buses/chennai-bus-tickets"style={{marginBottom:"10px"}} >
              More >>
                    </a>
              </li>
