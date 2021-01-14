@@ -56,7 +56,7 @@ render() {
          </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem nav caret style={{}}>
+            <MDBNavItem nav caret style={{paddingTop:"7px"}}>
             <Link  to="/Help" target="_blank"   class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                 Help
                 </Link>
