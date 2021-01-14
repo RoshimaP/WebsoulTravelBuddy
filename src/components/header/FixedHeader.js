@@ -51,13 +51,13 @@ render() {
          </MDBNavItem>
          <MDBNavItem>
          <Link class="  navbar-brand bus-ticket" style={{fontSize:"12px"}} to="/Bushire">
-         BUS HIRE    
+         BUS HIRE bjbhgg  
          </Link>
          </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem nav caret >
-            <Link  to="/Help"   class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+            <MDBNavItem nav caret style={{marginTop:"7px"}}>
+            <Link  to="/Help" target="_blank"   class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                 Help
                 </Link>
              
