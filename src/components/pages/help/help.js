@@ -12,10 +12,7 @@ class  Help extends Component {
                             constructor(props) {
                                                         super(props);
                                                 
-                                                        this.state = {
-                                                            modalState: true
-                                                        };
-                                                
+                                                        
                                                         this.handleShow = this.handleShow.bind(this);
                                                     }
                                                     componentDidMount(){
@@ -24,7 +21,7 @@ class  Help extends Component {
                                                       }) 
                                                     }
                                                     handleShow() {
-                                                        this.setState({ modalState: !this.state.modalState });
+                                                        this.setState({ modalState: false });
                                                     }  
 
 render()
@@ -32,51 +29,7 @@ render()
     return(
            <div>
 <Header/>
-     <div style={{backgroundColor:"#d84f57"}}>
-        <br/>   
-        <br/>  
-
-
-      <div className="uk-grid uk-margin-remove uk-padding-remove" style={{justifyContent:"center"}}>
-         <div className="uk-padding-remove " style={{ borderRadius:"10px", width:"360px",height:"600px",backgroundColor:"#f3f3f3"}}>
-           <p className="leftdivp" style={{}}>
-           Please Sign In / Sign up to access help section                          
-           </p>
-
-          </div>                           
-          <div className="" uk-grid>
-           <div>
-              <p style={{fontSize:"45px",fontWeight:"700",color:"#fff",justifyContent:"end",fontFamily:"Montserrat"}}>
-              redBus Help                           
-                 </p>                         
-            </div> 
-            <div>
-              <img src={leftdivimg}/>                      
-
-             </div>
-             <div>
-                <p style={{fontSize:"29px",fontWeight:"700",color:"#fff",margin:"40px 0 0 20px",justifyContent:"end",fontFamily:"Montserrat"}}>
-                24/7 Customer Support
-                 </p>                         
-                </div>                
-
-                                        
-          </div>
-      </div>
-
-  
-
-
-
-
-
-
-
-   <br/>
-      <br/>
-      </div>
-
-      {
+{
         this.state.modalState ? 
            
      
@@ -177,6 +130,51 @@ render()
  
         : null
       }
+     <div style={{backgroundColor:"#d84f57"}}>
+        <br/>   
+        <br/>  
+
+
+      <div className="uk-grid uk-margin-remove uk-padding-remove" style={{justifyContent:"center"}}>
+         <div className="uk-padding-remove " style={{ borderRadius:"10px", width:"360px",height:"600px",backgroundColor:"#f3f3f3"}}>
+           <p className="leftdivp" style={{}}>
+           Please Sign In / Sign up to access help section                          
+           </p>
+
+          </div>                           
+          <div className="" uk-grid>
+           <div>
+              <p style={{fontSize:"45px",fontWeight:"700",color:"#fff",justifyContent:"end",fontFamily:"Montserrat"}}>
+              redBus Help                           
+                 </p>                         
+            </div> 
+            <div>
+              <img src={leftdivimg}/>                      
+
+             </div>
+             <div>
+                <p style={{fontSize:"29px",fontWeight:"700",color:"#fff",margin:"40px 0 0 20px",justifyContent:"end",fontFamily:"Montserrat"}}>
+                24/7 Customer Support
+                 </p>                         
+                </div>                
+
+                                        
+          </div>
+      </div>
+
+  
+
+
+
+
+
+
+
+   <br/>
+      <br/>
+      </div>
+
+     
      <Footer/>
            </div>                     
 
