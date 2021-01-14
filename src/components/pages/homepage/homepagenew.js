@@ -30,6 +30,7 @@ import { Link } from 'react-router-dom';
 import journey_for from '../../../assets/bus_tickets/journey_for.jpg';
 import amazon_pay from '../../../assets/bus_tickets/amazon_pay.jpg';
 import "../../../components/pages/homepage/offers/offers.css"
+import bb  from '../../../assets/homepage/image1.png'
 
 {/**function openWin() {
    window.open("https://www.w3schools.com");
@@ -44,11 +45,11 @@ class Homepage extends Component {
 
   return (
   <div style={{width:"fit-content"}}>
-      {/*<Header/>*/}
       <Header/>
+     
 
 {/**background image */}
- <div class=" background" style={{backgroundSize:"Cover",backgroundRepeat:"no-repeat",backgroundPosition:"center", width:"100%",padding:"56px", backgroundImage: 'url(' + require('../../../assets/homepage/image1.png') + ')'}}>
+ <div class=" background" style={{backgroundSize:"Cover",backgroundRepeat:"no-repeat",backgroundPosition:"center", width:"100%",padding:"56px", backgroundImage: "url('https://st.redbus.in/Images/INDOFFER/redbus-website-banner-bg.png')"}}>
  <br/>
      <br/>
      <br/>

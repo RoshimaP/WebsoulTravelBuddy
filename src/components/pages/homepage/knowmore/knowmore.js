@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../../../components/header/Header';
+import Header from '../../../../components/header/FixedHeader';
 import Footer from '../../../../components/footer/Footer';
 import "../../homepage/knowmore/knowmore.css"
 import { Link } from 'react-router-dom';

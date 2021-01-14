@@ -20,7 +20,7 @@ import { MDBDatePicker } from "mdbreact";
 import { MDBListGroupItem, MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
 import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
-import Header from'../../header/Header'
+import Header from'../../header/FixedHeader'
 import Footer from'../../footer/Footer'
 import "../../pages/bus_tickets/Bus_Tickets.css"
 const useStyles = makeStyles((theme) => ({
@@ -69,7 +69,7 @@ class  Bus_Tickets extends Component {
         onSelectDate={ date => this.setState({ value: date }) }
         componentRef={instance => this.datePicker = instance} /> */}
   
-     
+     <br></br><br/>
       <div  className="" style={{backgroundColor:"#4a4a4a",height:"28px",fontFamily:"Lato,sans-serif"}}>
       <div class="uk-margin-large-left">
   <a href="#" style={{color:"#fff",fontSize:"13px",fontFamily:"Lato"}}>Home ></a>
@@ -78,7 +78,7 @@ class  Bus_Tickets extends Component {
      </div>
      
 {/**background image */}
- <div class="uk-width-1-1 uk-background-cover" style={{width:"100%", backgroundImage: 'url(' + require('../../../assets/bus_tickets/image1.jpg') + ')',height:"450px", backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: "center" }}>
+ <div class="uk-width-1-1 uk-background-cover" style={{width:"100%", backgroundImage: "url(https://st.redbus.in/seo/ind/redbus-SEO-page-banner_NewYear_1609263392.png)",height:"450px", backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: "center" }}>
  <br/>
      
      <div className="uk-grid uk-text-center " >

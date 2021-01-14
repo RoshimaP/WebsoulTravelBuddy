@@ -26,47 +26,47 @@ render() {
       <MDBNavbar className="Header" color="py-0 px-4" dark  expand="md"  >
      
      <MDBNavbarBrand>
-     <a class="navbar-brand bus-ticket "  style={{margin:"0px",marginLeft:"35px"}} href="/homepage">
+     <Link class="navbar-brand bus-ticket "  style={{margin:"0px",marginLeft:"35px"}} href="/homepage">
       <img src={iconredbus} class=" " alt=" " style={{marginTop:"-46px",marginBottom:"-46px",fontWeight:700}} width="80" height="50"/>
-     </a>       
+     </Link>       
       </MDBNavbarBrand>
 
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse className="Headercolor" id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
           <MDBNavItem>
-          <a class=" navbar-brand uk-text-bold bus-ticket" style={{fontSize:"14px",fontFamily:"Lato"}} href="/BusTickets">
+          <Link to="/BusTickets" class=" navbar-brand uk-text-bold bus-ticket" style={{fontSize:"14px",fontFamily:"Lato"}} >
           BUS TICKETS
-         </a>
+         </Link>
          </MDBNavItem>
           <MDBNavItem>
-          <a class=" navbar-brand bus-ticket " style={{fontSize:"14px",fontFamily:"Lato"}} href="/rpool">
+          <Link to="/rpool" class=" navbar-brand bus-ticket " style={{fontSize:"14px",fontFamily:"Lato"}}>
           rPool<sup style={{fontWeight:"bold"}}>New</sup>    
-          </a>
+          </Link>
          </MDBNavItem>
          <MDBNavItem>
-         <a class="  navbar-brand bus-ticket" style={{fontSize:"12px"}} href="/Bushire">
+         <Link class="  navbar-brand bus-ticket" style={{fontSize:"12px"}} to="/Bushire">
          BUS HIRE    
-          </a>
+         </Link>
          </MDBNavItem>
           </MDBNavbarNav>
           <div class="NavRight">
           <MDBNavbarNav right >
             <MDBNavItem nav caret style={{marginTop:"7px",fontFamily:"Lato"}}>
-            <a href="/Help" target="_blank"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"10px",fontWeight:"100"}} >
+            <Link to="/Help" target="_blank"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"10px",fontWeight:"100"}} >
                 Help
-                </a>
+                </Link>
              
             </MDBNavItem>
            
             <MDBNavItem nav caret style={{marginTop:"7px",fontFamily:"Lato"}}>
-            <a href="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"10px",fontWeight:"100"}} >
+            <Link href="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"10px",fontWeight:"100"}} >
                Print/SMS Ticket
-                </a>
+               </Link>
              
             </MDBNavItem>
             <MDBNavItem nav caret style={{marginTop:"7px",fontFamily:"Lato"}}>
-            <a href="/Cancel"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >Cancel</a>
+            <Link href="/Cancel"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >Cancel</Link>
 
              
             </MDBNavItem>

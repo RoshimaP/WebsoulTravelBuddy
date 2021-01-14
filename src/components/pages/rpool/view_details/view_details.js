@@ -6,12 +6,28 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import breaking from '../../../../assets/rpool/breaking-news.svg'
 import Box from '@material-ui/core/Box';
 import iconredbus from '../../../../assets/homepage/redbus_real_logo.png'
-
+import MainBanner from '../../../../assets/rpool/MainBanner.svg'
 import '../rpool.css';
-
-
+import Facebook from '../../../../assets/rpool/Facebook.png'
+import rPoolUnavailable from '../../../../assets/rpool/rPoolUnavailable.svg'
+import MainBanner2 from '../../../../assets/rpool/MainBanner.svg'
+import rPoolShield from '../../../../assets/rpool/rPoolShield.svg'
+import StayPositive from '../../../../assets/rpool/StayPositive.svg'
+import covidzone from '../../../../assets/rpool/covid-zone.svg'
+import distancing from '../../../../assets/rpool/distancing-seating.svg'
+import clean from '../../../../assets/rpool/clean-car.svg'
+import mask from'../../../../assets/rpool/mask.svg'
+import hygiene from'../../../../assets/rpool/hygiene.svg'
+import symptoms from '../../../../assets/rpool/symptoms.svg'
+import sanitizer from '../../../../assets/rpool/sanitizer.svg'
+import ac from '../../../../assets/rpool/no-ac.svg'
+import LinkedIn from '../../../../assets/rpool/LinkedIn.png'
+import Instagram from'../../../../assets/rpool/Instagram.png'
+import callyouroldmates from '../../../../assets/rpool/callyouroldmates.png' 
+import JuststayatHome02 from'../../../../assets/rpool/JuststayatHome02.svg'
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -81,7 +97,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/mask.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={mask} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Face Masks</p>
                   <p className="uk-align-left uk-width1-1 contents">Make sure to wear protective masks at all times while onboard.</p>
 
@@ -91,7 +107,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/sanitizer.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={sanitizer} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Hand Sanitizer</p>
                   <p className="uk-align-left uk-width1-1 contents">Carry an alcohol-based hand sanitizers and everyone boarding the car must use them to wipe their hands clean.</p>
 
@@ -101,7 +117,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/clean-car.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={clean} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Clean/Sanitize Car</p>
                   <p className="uk-align-left uk-width1-1 contents">Clean your car interiors, door handles and ergonomic points every time before the start of a trip.</p>
 
@@ -111,7 +127,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/hygiene.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={hygiene} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Personal Hygiene</p>
                   <p className="uk-align-left uk-width1-1 contents">Uphold personal hygiene and wash hands for at least 20 seconds with soap and running water, often and before travelling.</p>
 
@@ -121,7 +137,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/no-ac.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={ac} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">No AC</p>
                   <p className="uk-align-left uk-width1-1 contents">It is recommended to ride without air conditioners ON. The windows can be kept half-open during the journey.</p>
 
@@ -131,7 +147,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/symptoms.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={symptoms} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Flu Symptoms</p>
                   <p className="uk-align-left uk-width1-1 contents">Ride givers, if diagnosed of any symptoms are requested to refrain from travelling and are advised to get clinical tests done.</p>
 
@@ -152,7 +168,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/mask.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={mask} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Face Masks</p>
                   <p className="uk-align-left uk-width1-1 contents">Make sure to wear protective masks at all times while onboard.</p>
 
@@ -162,7 +178,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/sanitizer.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={sanitizer} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Hand Sanitizer</p>
                   <p className="uk-align-left uk-width1-1 contents">Carry an alcohol-based hand sanitizers and everyone boarding the car must use them to wipe their hands clean.</p>
 
@@ -172,7 +188,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/hygiene.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={hygiene} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Personal Hygiene</p>
                   <p className="uk-align-left uk-width1-1 contents">Uphold personal hygiene and wash hands for at least 20 seconds with soap and running water, often and before travelling.</p>
 
@@ -182,7 +198,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/no-ac.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={ac}  className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">No AC</p>
                   <p className="uk-align-left uk-width1-1 contents">It is recommended to ride without air conditioners ON. The windows can be kept half-open during the journey.</p>
 
@@ -192,7 +208,7 @@ function Ride() {
             <div className="uk-margin-bottom">
               <div class="uk-card uk-card-default uk-card-body" style={{ border: "1px solid #979797", boxShadow: "none" }}>
                 <div className="">
-                  <img src={require('../../../../assets/rpool/symptoms.svg')} className="uk-align-left " style={{ width: "6em" }}></img>
+                  <img src={symptoms} className="uk-align-left " style={{ width: "6em" }}></img>
                   <p className="uk-align-left uk-width1-1 contents">Flu Symptoms</p>
                   <p className="uk-align-left uk-width1-1 contents">Ride givers, if diagnosed of any symptoms are requested to refrain from travelling and are advised to get clinical tests done.</p>
 
@@ -416,7 +432,7 @@ class Details extends Component {
                     </div>
                   </div>
                   <div className="uk-width-1-2@l uk-width-1-1@s">
-                    <img src={require('../../../../assets/rpool/MainBanner.svg')} style={{ height: "100%", width: "45em" }} />
+                    <img src={MainBanner} style={{ height: "100%", width: "45em" }} />
                   </div>
                 </div>
 
@@ -463,7 +479,7 @@ class Details extends Component {
               <div className="uk-grid">
                 <div className="uk-width-1-3@l uk-width-1-1@s">
                   <div style={{}}>
-                    <img src={require('../../../../assets/rpool/rPoolUnavailable.svg')} style={{ width: "34em" }} />
+                    <img src={rPoolUnavailable} style={{ width: "34em" }} />
                   </div>
                 </div>
                 <div className="uk-width-2-3@l uk-width-1-1@s contents">
@@ -496,12 +512,12 @@ class Details extends Component {
                   </div>
                 </div>
                 <div className="uk-width-1-3@l uk-width-1-1@s">
-                  <img src={require('../../../../assets/rpool/MainBanner.svg')} style={{ width: "25em" }} />
+                  <img src={MainBanner2}  style={{ width: "25em" }} />
                 </div>
               </div>
               <div className="uk-width-1-1 uk card uk-card-default">
                 <div className="uk-grid uk-padding ">
-                  <div ><img src={require('../../../../assets/rpool/rPoolShield.svg')} /></div>
+                  <div ><img src={rPoolShield} /></div>
                   <div className="contents" style={{ fontWeight: "700", fontSize: "18px" }}>rPool-Shield</div>
                 </div>
                 <div className="uk-text-left contents uk-padding uk-padding-remove-top" style={{ lineHeight: "1.6" }}>We have introduced a new feature called ‘rPool-Shield’ which is a safety badge that will be assigned to all riders who complete a quick self assessment questionnaire.
@@ -509,7 +525,7 @@ class Details extends Component {
               </div>
               <div className="uk-width-1-1 uk card uk-card-default">
                 <div className="uk-grid uk-padding ">
-                  <div ><img src={require('../../../../assets/rpool/covid-zone.svg')} /></div>
+                  <div ><img src={covidzone}  /></div>
                   <div className="contents" style={{ fontWeight: "700", fontSize: "18px" }}>COVID Zone Details</div>
                 </div>
                 <div className="uk-text-left contents uk-padding uk-padding-remove-top" style={{ lineHeight: "1.6" }}>
@@ -522,7 +538,7 @@ class Details extends Component {
               </div>
               <div className="uk-width-1-1 uk card uk-card-default">
                 <div className="uk-grid uk-padding ">
-                  <div ><img src={require('../../../../assets/rpool/distancing-seating.svg')} /></div>
+                  <div ><img src={distancing} /></div>
                   <div className="contents" style={{ fontWeight: "700", fontSize: "18px" }}>Limited Seating Capacity</div>
                 </div>
                 <div className="uk-text-left contents uk-padding uk-padding-remove-top" style={{ lineHeight: "1.6" }}>In order to enable social distancing on board, we have limited the sharing capacity to 2 seats (apart from the ride-giver) per ride, to have a maximum of 3 people in the car at any point of time during the journey.
@@ -559,7 +575,7 @@ class Details extends Component {
               <p className="contents uk-align-left uk-width-1-1">It is important, especially during a situation as critical as now, to stay healthy and positive. Here are some of our recommendations:</p>
               <div className="uk-grid">
                 <div className="uk-width-1-3@l uk-width-1-1@s">
-                  <img src={require('../../../../assets/rpool/breaking-news.svg')} style={{ width: "57em" }} />
+                  <img src={breaking} style={{ width: "57em" }} />
                 </div>
                 <div className="uk-width-2-3@l uk-width-1-1@s">
                   <div className="uk-card uk-card-default uk-padding">
@@ -595,7 +611,7 @@ class Details extends Component {
                   </div>
                 </div>
                 <div className="uk-width-1-3@l uk-width-1-1@s">
-                  <img src={require('../../../../assets/rpool/JuststayatHome02.svg')} style={{ width: "57em" }} />
+                  <img src={JuststayatHome02} style={{ width: "57em" }} />
                 </div>
               </div>
             </div>
@@ -604,7 +620,7 @@ class Details extends Component {
             <div className="uk-width-1-1 details_width uk-align-center uk-padding" style={{ backgroundColor: "#f7f7f7" }}>
               <div className="uk-grid">
                 <div className="uk-width-1-3@l uk-width-1-1@s">
-                  <img src={require('../../../../assets/rpool/StayPositive.svg')} style={{ width: "57em" }} />
+                  <img src={StayPositive} style={{ width: "57em" }} />
                 </div>
                 <div className="uk-width-2-3@l uk-width-1-1@s">
                   <div className="uk-card uk-card-default uk-padding">
@@ -630,16 +646,16 @@ class Details extends Component {
                 <div className="contents uk-text-left uk-padding-small" style={{ fontSize: "24px", fontWeight: "700", color: "white" }}>Social Media Feed</div>
                 <div className="uk-grid uk-child-width-1-4@l uk-child-width-1-2@s">
                   <div>
-                    <a><img className="uk-margin-bottom" src={require('../../../../assets/rpool/Facebook.png')} style={{ width: "16em", height: "16em" }} /></a>
+                    <a><img className="uk-margin-bottom" src={Facebook} style={{ width: "16em", height: "16em" }} /></a>
                   </div>
                   <div>
-                    <a><img className="uk-margin-bottom" src={require('../../../../assets/rpool/callyouroldmates.png')} style={{ width: "16em", height: "16em" }} /></a>
+                    <a><img className="uk-margin-bottom" src={callyouroldmates}style={{ width: "16em", height: "16em" }} /></a>
                   </div>
                   <div>
-                    <a><img className="uk-margin-bottom" src={require('../../../../assets/rpool/Instagram.png')} style={{ width: "16em", height: "16em" }} /></a>
+                    <a><img className="uk-margin-bottom" src={Instagram} style={{ width: "16em", height: "16em" }} /></a>
                   </div>
                   <div>
-                    <a><img className="uk-margin-bottom" src={require('../../../../assets/rpool/LinkedIn.png')} style={{ width: "16em", height: "16em" }} /></a>
+                    <a><img className="uk-margin-bottom" src={LinkedIn} style={{ width: "16em", height: "16em" }} /></a>
                   </div>
                 </div>
 

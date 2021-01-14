@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import { Route,BrowserRouter,Switch } from "react-router-dom";
+import { Route,BrowserRouter as Router,Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Footer from '../src/components/footer/Footer'
 import Footernew from './components/footer/Footernew'
 
-import Header from '../src/components/header/Header'
+import Header from '../src/components/header/FixedHeader'
 import Homepage from '../src/components/pages/homepage/homepagenew'
 import Card from '../src/components/pages/homepage/card/Card'
 import Cards from '../src/components/pages/homepage/cards/Cards'
@@ -31,41 +31,54 @@ import Signin from '../src/components/pages/signin/signin'
 
 function App() {
     return (
+      <Router>
         <div>
         <div>
+          
+          
+        </div>
       
-        <BrowserRouter>
+        
          <Switch>
-       <Route exact path="/" component={Homepage}/>
-       <Route exact path="/Header" component={Header}/>
-          <Route exact path="/Footer" component={Footer}/>
-          <Route exact path="/Homepage" component={Homepage}/> 
-          <Route  exact path="/homepage/knowmore" component={KnowMore}/>    
-          <Route exact path="/Card" component={Card}/>  
-          <Route exact path="/Cards"  component={Cards}/>  
-          <Route exact path="/BusTickets"  component={Bus_Tickets}/> 
-          <Route exact path="/offers"  component={offers}/>   
-          <Route exact path="/rpool" component={Rpool}/>
-          <Route exact path="/rpool/viewdetails" component={Details}/>
-          <Route exact path="/rpool/alloffers" component={Alloffers}/>
-          <Route exact path="/rpool/prilgrimages" component={Pilgrimages}/>
-          <Route exact path="/Help" component={Help}/>
-          <Route exact path="/Showmyticket" component={Showmyticket}/>
-          <Route exact path="/Reschedule" component={Reschedule}/>
-          <Route exact path="/SMSand" component={SMSand}/>
-          <Route exact path="/Cancel" component={Cancel}/>
-          <Route  exact path="/homepage/knowmoretrackbus" component={KnowMoreTrackBus}/>    
-          <Route exact path="/Signin" component={Signin}/>
+              <Route exact path="/" component={Homepage}/>
+              <Route path="/BusTickets"  component={Bus_Tickets}/> 
+              <Route  path="/rpool" component={Rpool}/>
+              <Route  path="/Bushire" component={Bushire}/>
+              <Route  path="/prilgrimages" component={Pilgrimages}/>
+              <Route  path="/offers"  component={offers}/>
+              <Route  path="/viewdetails" component={Details}/>
+              <Route  path="/alloffers" component={Alloffers}/>
+              <Route   path="/homepage/knowmore" component={KnowMore}/>    
+              <Route  path="/Card" component={Card}/>  
+              <Route  path="/Cards"  component={Cards}/>  
+              <Route path="/BusTickets"  component={Bus_Tickets}/> 
+                
+              <Route  path="/Help" component={Help}/>
+              <Route  path="/Showmyticket" component={Showmyticket}/>
+              <Route  path="/Reschedule" component={Reschedule}/>
+              <Route  path="/SMSand" component={SMSand}/>
+              <Route  path="/Cancel" component={Cancel}/>
+              <Route  path="/homepage/knowmoretrackbus" component={KnowMoreTrackBus}/> 
 
-          <Route exact path="/Bushire" component={Bushire}/>
+       {/* <Route  path="/Header" component={Header}/>
+          <Route  path="/Footer" component={Footer}/> */}
+          {/* <Route  path="/Homepage" component={Homepage}/>  */}
+          {/*    
+          <Route  path="/Signin" component={Signin}/>
+
+           */}
 
 
 
 
            </Switch>
-         </BrowserRouter>
+         
+         <div>
+           {/* <Footer></Footer> */}
          </div>
+       
          </div>
+         </Router>
         
         
     );

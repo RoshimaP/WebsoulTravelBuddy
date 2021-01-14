@@ -17,7 +17,12 @@ import why_book_1 from '../../../../assets/bus_tickets/why_book_1.svg';
 import why_book_2 from '../../../../assets/bus_tickets/why_book_2.jpg';
 import why_book_3 from '../../../../assets/bus_tickets/why_book_3.jpg';
 import why_book_4 from '../../../../assets/bus_tickets/why_book_4.jpg';
+import shirdi from  '../../../../assets/rpool/shirdi_home_tile.jpg'
 import footericon from '../../../../assets/homepage/redbuswhiteicon.png'
+import tirupati from '../../../../assets/rpool/tirupati_home_tile.jpg'
+import packageicon from '../../../../assets/rpool/package_icon.png'
+import traveler from '../../../../assets/rpool/Pilgrimage_traveler_male.png'
+import travalermale from '../../../../assets/rpool/Pilgrimage_traveler_male.png'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -58,9 +63,9 @@ class Pilgrimages extends Component {
       <div>
         <nav class="navbar navbar-expand-lg navbar-dark " style={{ backgroundColor: "#e9555d", }}>
           <span className="uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-visible@l"></span>
-          <a class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} href="/homepage">
+          <Link class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} to="/">
            <img src={iconredbus} class=" " alt=" " style={{marginTop:"-46px",marginBottom:"-46px"}} width="75px" height="39px"/>
-         </a>  
+         </Link>  
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -73,10 +78,10 @@ class Pilgrimages extends Component {
                 <Link class="nav-link" to="/rpool">rPool</Link>
               </li>
               <li class="nav-item px-2">
-              <Link class="nav-link" to="#">BUS HIRE</Link>
+              <Link class="nav-link" to="/Bushire">BUS HIRE</Link>
               </li>
               <li class="nav-item px-2">
-              <Link class="nav-link" to="/rpool/prilgrimages">PILGRIMAGE</Link>
+              <Link class="nav-link" to="/prilgrimages">PILGRIMAGE</Link>
               </li>
             </ul>
           </div>
@@ -85,7 +90,7 @@ class Pilgrimages extends Component {
 
         <div style={{ backgroundColor: "#f7f7f7" }}>
           {/* contents on bg image */}
-          <div className="uk-width-1-1 uk-background-cover uk-padding-large" style={{ width: "100%", height: "", backgroundImage: 'url(' + require('../../../../assets/rpool/Pilgrimages_main.jpg') + ')', backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: "center" }}>
+          <div className="uk-width-1-1 uk-background-cover uk-padding-large" style={{ width: "100%", height: "", backgroundImage:"url('https://st.redbus.in/images/pilgrimages/homepage/Pilgrimages_main.jpg')", backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: "center" }}>
             {/* headings on image */}
             <div className="uk-margin-bottom">
               <p className="sec_headings" style={{ color: "#FFFFFF",fontSize:"29px",letterSpacing:"2px",textShadow:"1px 1px 1px #444" }}>Pilgrimage Packages</p>
@@ -196,7 +201,7 @@ class Pilgrimages extends Component {
                 <div className="uk-padding uk-padding-remove-top uk-padding-remove-bottom">
                   <div className="uk-grid uk-grid-collapse">
                     <div className="uk-width-1-4@l uk-width-1-4@m uk-width-1-1@s uk-margin-small-top uk-margin-small-bottom">
-                      <img src={require('../../../../assets/rpool/package_icon.png')} className="" style={{ width: "100px", height: "100px" }} />
+                      <img src={packageicon} className="" style={{ width: "100px", height: "100px" }} />
                     </div>
                     <div className="uk-width-3-4@l uk-width-3-4@m uk-width-1-1@s uk-margin-small-top uk-margin-small-bottom uk-align-center" style={{paddingTop:"20px"}}>
                       <p className="contents uk-text-center" style={{ fontSize: "20px", fontWeight: "600" ,color:"black",marginBottom:"0px"}}>Upto 15% Off on packages!</p>
@@ -227,7 +232,7 @@ class Pilgrimages extends Component {
 
                       <div class="uk-card-body">
                         <div className="uk-grid">
-                          <div className=" uk-padding"><img src={require('../../../../assets/rpool/Pilgrimage_traveler_male.png')} style={{width:"50px"}}/></div>
+                          <div className=" uk-padding"><img src={traveler} style={{width:"50px"}}/></div>
                           <div className="uk-width-3-4">
                             <div style={{ height: "200px"}}>
                               <p className="contents uk-align-left" style={{ color: "#919cd9", fontWeight: "600", fontSize: "0.9em", fontStyle: "italic" }}>  <i class="fa fa-quote-left " aria-hidden="true" style={{ color: "#919cd9", padding: "10px" }}></i>Amazing Experience</p>
@@ -252,7 +257,7 @@ class Pilgrimages extends Component {
 
                       <div class="uk-card-body">
                         <div className="uk-grid">
-                          <div className=" uk-padding"><img src={require('../../../../assets/rpool/Pilgrimage_traveler_male.png')} style={{width:"50px"}}/></div>
+                          <div className=" uk-padding"><img src={travalermale} style={{width:"50px"}}/></div>
                           <div className="uk-width-3-4">
                             <div style={{ height: "200px"}}>
                               <p className="contents uk-align-left" style={{ color: "#919cd9", fontWeight: "600", fontSize: "0.9em", fontStyle: "italic" }}>  <i class="fa fa-quote-left " aria-hidden="true" style={{ color: "#919cd9", padding: "10px" }}></i>Fantastic</p>
@@ -278,7 +283,7 @@ class Pilgrimages extends Component {
 
                       <div class="uk-card-body">
                         <div className="uk-grid">
-                          <div className=" uk-padding"><img src={require('../../../../assets/rpool/Pilgrimage_traveler_male.png')} style={{width:"50px"}}/></div>
+                          <div className=" uk-padding"><img src={travalermale} style={{width:"50px"}}/></div>
                           <div className="uk-width-3-4">
                             <div style={{ height: "200px"}}>
                               <p className="contents uk-align-left" style={{ color: "#919cd9", fontWeight: "600", fontSize: "0.9em", fontStyle: "italic" }}>  <i class="fa fa-quote-left " aria-hidden="true" style={{ color: "#919cd9", padding: "10px" }}></i>Easy to use!</p>
@@ -372,7 +377,7 @@ class Pilgrimages extends Component {
               <div className="uk-width-1-3@l uk-width-1-2@m uk-width-1-3@s">
                 <div class="uk-card uk-card-default uk-align-center">
                   <div class="uk-card-media-top uk-inline " style={{ width: "100%" }}>
-                    <img src={require('../../../../assets/rpool/shirdi_home_tile.jpg')} className="rgba-indigo-light" alt="" style={{ width: "100%", height: "250px" }} />
+                    <img src={shirdi} className="rgba-indigo-light" alt="" style={{ width: "100%", height: "250px" }} />
                     <div class=" uk-position-cover mask rgba-black-strong" style={{ width: "100%", height: "250px", opacity: "0.7" }}></div>
                     <div class="uk-overlay uk-position-bottom uk-light uk-text-center" style={{ color: "white", fontWeight: "700", fontSize: "1.5em" }}>SHIRDI</div>
                   </div>
@@ -443,7 +448,7 @@ class Pilgrimages extends Component {
               <div className="uk-width-1-3@l uk-width-1-2@m uk-width-1-3@s">
                 <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top uk-inline" style={{ width: "100%" }}>
-                    <img src={require('../../../../assets/rpool/tirupati_home_tile.jpg')} className="rgba-indigo-light" alt="" style={{ width: "100%", height: "250px" }} />
+                    <img src={tirupati} className="rgba-indigo-light" alt="" style={{ width: "100%", height: "250px" }} />
                     <div class=" uk-position-cover mask rgba-black-strong" style={{ width: "100%", height: "250px", opacity: "0.7" }}></div>
                     <div class="uk-overlay uk-position-bottom uk-light uk-text-center" style={{ color: "white", fontWeight: "700", fontSize: "1.5em" }}>TIRUPATI</div>
                   </div>
@@ -514,7 +519,7 @@ class Pilgrimages extends Component {
               <div className="uk-width-1-3@l uk-width-1-2@m uk-width-1-3@s">
                 <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top uk-inline" style={{ width: "100%" }}>
-                    <img src={require('../../../../assets/rpool/shirdi_home_tile.jpg')} alt="" style={{ width: "100%", height: "250px" }} />
+                    <img src={shirdi} alt="" style={{ width: "100%", height: "250px" }} />
                     <div class=" uk-position-cover mask rgba-black-strong" style={{ width: "100%", height: "250px", opacity: "0.7" }}></div>
                     <div class="uk-overlay uk-position-bottom uk-light uk-text-center" style={{ color: "white", fontWeight: "700", fontSize: "1.5em" }}>SHIRDI</div>
                   </div>

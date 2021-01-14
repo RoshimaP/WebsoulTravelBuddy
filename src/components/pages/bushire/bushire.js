@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Header from'../../header/Header'
+import Header from'../../header/FixedHeader'
 import Footer from'../../footer/Footer'
 import slide1 from '../../../assets/bushiree/images/top.PNG';
 import slide2 from '../../../assets/bushiree/images/p2.PNG';
@@ -74,7 +74,7 @@ constructor(props){
 
 <Header/>
 
-
+<br/><br/>
 <div class="uk-width-1-1 " id="my-id">
 <img class=""   src={slide1} />
 

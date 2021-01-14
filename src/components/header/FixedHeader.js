@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
@@ -22,42 +21,45 @@ toggleCollapse = () => {
 
 render() {
   return (
-    <Router class="" >
+    // <Router class="" >
+      <div>
        {/* position:"fixed", uk-sticky="top:0"*/}
         <div class=""  style={{position:"fixed",zIndex:"100",width:"-webkit-fill-available"}}>
    <div>
       <MDBNavbar className="Header" color="py-0 px-4" dark  expand="md"  >
      
      <MDBNavbarBrand>
-     <a class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} href="/homepage">
+     <Link class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} to="/">
       <img src={iconredbus} class=" " alt=" " style={{marginTop:"-46px",marginBottom:"-46px"}} width="70" height="50"/>
-     </a>       
+     </Link>       
       </MDBNavbarBrand>
 
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse className="Headercolor" id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
           <MDBNavItem>
-          <a class=" navbar-brand uk-text-bold bus-ticket" style={{fontSize:"12px"}} href="/BusTickets">
+          <Link to="/BusTickets" class=" navbar-brand uk-text-bold bus-ticket" style={{fontSize:"12px"}} >
           BUS TICKETS
-         </a>
+         </Link>
          </MDBNavItem>
+
+        
           <MDBNavItem>
-          <a class=" navbar-brand bus-ticket " style={{fontSize:"12px"}} href="/rpool">
+          <Link class=" navbar-brand bus-ticket " style={{fontSize:"12px"}} to="/rpool">
           rPool<sup style={{fontWeight:"bold"}}>New</sup>    
-          </a>
+          </Link>
          </MDBNavItem>
          <MDBNavItem>
-         <a class="  navbar-brand bus-ticket" style={{fontSize:"12px"}} href="/Bushire">
+         <Link class="  navbar-brand bus-ticket" style={{fontSize:"12px"}} to="/Bushire">
          BUS HIRE    
-          </a>
+         </Link>
          </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem nav caret style={{marginTop:"7px"}}>
-            <a href="/Help" target="_blank"   class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+            <Link  to="/Help" target="_blank"   class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                 Help
-                </a>
+                </Link>
              
             </MDBNavItem>
             <MDBNavItem>
@@ -68,17 +70,17 @@ render() {
                 <MDBDropdownMenu className="dropdown-default "  >
                   <MDBDropdownItem  header  href="#!"  >Bus Ticket</MDBDropdownItem>
                   <MDBDropdownItem  href="#!">
-                    <a href="/Cancel"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >Cancel</a>
+                  <Link to="/Cancel"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >Cancel</Link>
                     </MDBDropdownItem>
-                  <MDBDropdownItem href="#!"><a href="/Reschedule"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                  <MDBDropdownItem href="#!"><Link to="/Reschedule"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                ReSchedule
-                </a></MDBDropdownItem>
-                  <MDBDropdownItem href="#!"> <a href="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                </Link></MDBDropdownItem>
+                  <MDBDropdownItem href="#!"> <Link to="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                 Show My Ticket
-                </a></MDBDropdownItem>
-                  <MDBDropdownItem href="#!"><a href="/SMSand"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                </Link></MDBDropdownItem>
+                  <MDBDropdownItem href="#!"><Link to="/SMSand"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                Email/SMS
-                </a></MDBDropdownItem>
+                </Link></MDBDropdownItem>
 
                 </MDBDropdownMenu>
               </MDBDropdown>
@@ -206,7 +208,9 @@ render() {
       </div>
       
       </div>
-    </Router>
+      </div>
+    
+    
     );
   }
 }

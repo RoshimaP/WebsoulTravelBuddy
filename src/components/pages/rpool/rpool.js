@@ -28,10 +28,13 @@ import recharge from '../../../assets/rpool/ic_recharge.svg';
 import redeem from '../../../assets/rpool/ic_redeem.svg';
 import arrowleft from '../../../assets/rpool/ic-arrow-left.svg';
 import arrowright from '../../../assets/rpool/ic-arrow-right.svg';
-
+import insurance from '../../../assets/rpool/bc_img_insurance.svg';
+import privacy from'../../../assets/rpool/img_privacy.svg';
+import savings from '../../../assets/rpool/img_savings.svg';
+import friends from '../../../assets/rpool/bc_img_friends.svg';
 import { Link } from 'react-router-dom';
 import iconredbus from '../../../assets/homepage/redbus_real_logo.png'
-
+import transaction from '../../../assets/rpool/img_no_transaction_charge.svg';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -596,9 +599,9 @@ class Rpool extends Component {
         <div>
           <nav class="navbar navbar-expand-lg navbar-dark " style={{ backgroundColor: "#d84f57",marginLeft:"-18px" }}>
             <span className="uk-padding uk-padding-remove-top uk-padding-remove-bottom uk-visible@l"></span>
-            <a class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} href="/homepage">
+            <Link class="navbar-brand uk-text-bold bus-ticket "  style={{margin:"0px"}} to="/">
            <img src={iconredbus} class=" " alt=" " style={{marginTop:"-46px",marginBottom:"-46px"}} width="75px" height="39px"/>
-         </a>          
+         </Link>          
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -608,20 +611,21 @@ class Rpool extends Component {
                   <Link class="nav-link" to="/BusTickets">BUS TICKETS</Link>
                 </li>
                 <li class="nav-item px-2">
-                  <Link class="nav-link" href="/rpool">rPool</Link>
+                  <Link class="nav-link" to="/rpool">rPool</Link>
                 </li>
                 <li class="nav-item px-2">
-                  <a class="nav-link" href="#">BUS HIRE</a>
+                  <Link class="nav-link" to="/Bushire">BUS HIRE</Link>
+                  
                 </li>
                 <li class="nav-item px-2">
-                  <Link class="nav-link" to="/rpool/prilgrimages">PILGRIMAGE</Link>
+                  <Link class="nav-link" to="/prilgrimages">PILGRIMAGE</Link>
                 </li>
               </ul>
             </div>
           </nav>
           {/* end of navigation */}
 
-          <div style={{}}>
+          <div className="main-body"style={{}}>
             {/* contents on bg image */}
             <div className="uk-width-1-1 uk-background-cover uk-padding-large" style={{ width: "100%", height: "600px", backgroundImage: 'url(' + require('../../../assets/rpool/bikecar_banner.png') + ')', backgroundPosition: 'center', backgroundRepeat: "no-repeat", backgroundSize: "center" }}>
 
@@ -659,7 +663,7 @@ class Rpool extends Component {
                     <p style={{ fontSize: "16px", fontWeight: "400", color: "#7e7e8c" }} className="uk-align-left rp-heading">We have enabled new safety features for ensuring the safety of our riders</p>
                   </div>
                   <div className="uk-width-1-4@l uk-width-1-2@m uk-padding-large">
-                    <Link className="font_fam" style={{ color: "rgb(77, 68, 158)", fontSize: "18px", fontWeight: "700", textDecoration: "none", cursor: "pointer" }} to="/rpool/viewdetails">VIEW DETAILS</Link>
+                    <Link className="font_fam" style={{ color: "rgb(77, 68, 158)", fontSize: "18px", fontWeight: "700", textDecoration: "none", cursor: "pointer" }} to="/viewdetails">VIEW DETAILS</Link>
 
                   </div>
 
@@ -675,7 +679,7 @@ class Rpool extends Component {
               <div className="uk-grid uk-width-1-1  uk-margin-medium-bottom" >
                 <div className="contents  uk-width-1-2@l uk-width-1-3@m uk-width-1-1@s uk-text-left" style={{fontWeight:"400"}}>Exciting offers for everyone. rPool Now!</div>
                 <div className="contents uk-width-1-2@l uk-width-1-3@m uk-width-1-1@s uk-text-right@l uk-text-left@s">
-                  <Link style={{ color: "#1034d9", cursor: "pointer", fontWeight: "600",WebkitTextStrokeWidth:"thin" ,fontSize:14}} to="/rpool/alloffers">VIEW ALL OFFERS</Link>
+                  <Link style={{ color: "#1034d9", cursor: "pointer", fontWeight: "600",WebkitTextStrokeWidth:"thin" ,fontSize:14}} to="/alloffers">VIEW ALL OFFERS</Link>
                 </div>
               </div>
               <div uk-slider="finite: true" className="uk-margin-large-bottom">
@@ -837,7 +841,7 @@ class Rpool extends Component {
                 <div className="" >
                   <div className="uk-grid" style={{marginBottom:"50px"}}>
                     <div className="uk-width-1-3">
-                      <img src={require('../../../assets/rpool/bc_img_insurance.svg')}  style={{height:"110px"}}/>
+                      <img src={insurance}  style={{height:"110px"}}/>
                     </div>
                     <div className="uk-width-2-3 ">
                       <p className="uk-align-left uk-width-1-1 contents" style={{ fontWeight: "700",WebkitTextStrokeWidth:"thin",letterSpacing:"1px",marginBottom:"20px" }}>Travel Smart with Insurance</p>
@@ -850,7 +854,7 @@ class Rpool extends Component {
                 <div className="">
                   <div className="uk-grid" style={{marginBottom:"50px"}}>
                     <div className="uk-width-1-3">
-                      <img src={require('../../../assets/rpool/img_privacy.svg')} style={{height:"110px"}} />
+                      <img src={privacy} style={{height:"110px"}} />
                     </div>
                     <div className="uk-width-2-3 ">
                       <p className="uk-align-left uk-width-1-1 contents" style={{ fontWeight: "700",WebkitTextStrokeWidth:"thin",letterSpacing:"1px" ,marginBottom:"20px" }}>Privacy Protected</p>
@@ -863,7 +867,7 @@ class Rpool extends Component {
               <div className="">
                   <div className="uk-grid" style={{marginBottom:"50px"}}>
                     <div className="uk-width-1-3">
-                      <img src={require('../../../assets/rpool/img_savings.svg')} style={{height:"110px"}} />
+                      <img src={savings} style={{height:"110px"}} />
                     </div>
                     <div className="uk-width-2-3 ">
                       <p className="uk-align-left uk-width-1-1 contents" style={{ fontWeight: "700",WebkitTextStrokeWidth:"thin",letterSpacing:"1px",marginBottom:"20px"  }}>Save More on every ride</p>
@@ -876,7 +880,7 @@ class Rpool extends Component {
                 <div className="">
                   <div className="uk-grid" style={{marginBottom:"50px"}}>
                     <div className="uk-width-1-3">
-                      <img src={require('../../../assets/rpool/bc_img_friends.svg')} style={{height:"110px"}}/>
+                      <img src={friends} style={{height:"110px"}}/>
                     </div>
                     <div className="uk-width-2-3 ">
                       <p className="uk-align-left uk-width-1-1 contents" style={{ fontWeight: "700",WebkitTextStrokeWidth:"thin",letterSpacing:"1px"  ,marginBottom:"20px"}}>Networking on the go</p>
@@ -889,7 +893,7 @@ class Rpool extends Component {
                 <div className="">
                   <div className="uk-grid" style={{marginBottom:"50px"}}>
                     <div className="uk-width-1-3">
-                      <img src={require('../../../assets/rpool/img_no_transaction_charge.svg')} style={{height:"110px"}} />
+                      <img src={transaction} style={{height:"110px"}} />
                     </div>
                     <div className="uk-width-2-3 ">
                       <p className="uk-align-left uk-width-1-1 contents" style={{ fontWeight: "700",WebkitTextStrokeWidth:"thin",letterSpacing:"1px",marginBottom:"20px"  }}>No Transaction Charges</p>

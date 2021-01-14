@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../header/Header';
+import Header from '../../header/FixedHeader';
 import Footer from '../../footer/Footer';
 import '../cancelticket/cancelticket.css';
 
