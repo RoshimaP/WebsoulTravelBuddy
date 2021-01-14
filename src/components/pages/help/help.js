@@ -13,17 +13,12 @@ class  Help extends Component {
                                                         super(props);
                                                 
                                                         this.state = {
-                                                            modalState: false
+                                                            modalState: true
                                                         };
                                                 
                                                         this.handleShow = this.handleShow.bind(this);
                                                     }
-                                                    componentDidMount(){
-                                                      this.setState({
-                                                        modalState : true
-                                                      }) 
-                                                    }
-                                                    handleShow() {
+                                                 handleShow() {
                                                         this.setState({ modalState: false });
                                                     }  
 
@@ -129,8 +124,6 @@ render()
      
                      </div>
      
-     
- 
         : null
       }
      <div style={{backgroundColor:"#d84f57"}}>
