@@ -12,7 +12,10 @@ class  Help extends Component {
                             constructor(props) {
                                                         super(props);
                                                 
-                                                        
+                                                        this.state = {
+                                                            modalState: true
+                                                        };
+                                                
                                                         this.handleShow = this.handleShow.bind(this);
                                                     }
                                                     componentDidMount(){
@@ -21,7 +24,7 @@ class  Help extends Component {
                                                       }) 
                                                     }
                                                     handleShow() {
-                                                        this.setState({ modalState: false });
+                                                        this.setState({ modalState: !this.state.modalState });
                                                     }  
 
 render()
