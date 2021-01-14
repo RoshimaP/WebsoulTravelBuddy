@@ -105,7 +105,20 @@ render() {
 </div>
 </MDBDropdownMenu>
               </MDBDropdown>
-              <div class="modal fade" style={{}} id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             
+            
+            </MDBNavItem>
+           </MDBNavbarNav>
+        
+
+
+        </MDBCollapse>
+      </MDBNavbar>
+      </div>
+      
+      </div>
+
+      <div class="modal fade" style={{}} id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   
   <div class="modal-dialog widthcf " role="document" style={{maxWidth:"679px"}}>
   
@@ -197,17 +210,6 @@ render() {
   
                   </div>
 
-            
-            </MDBNavItem>
-           </MDBNavbarNav>
-        
-
-
-        </MDBCollapse>
-      </MDBNavbar>
-      </div>
-      
-      </div>
       </div>
     
     
