@@ -16,7 +16,7 @@ function cancelticket() {
    
 
         <div className="" style={{margin:"auto",height:"700px",width:"100%",backgroundColor:"#eee",fontFamily:"Montserrat"}}>
-            
+            <br/><br/>
             <div className=" uk-flex-center " style={{fontFamily:"Montserrat",fontSize:"15px",fontWeight: "700",lineHeight: "1.38",  color: "#3e3e52", textAlign: "center",paddingTop: "32px"}}>
                 Cancel your Ticket
             </div>

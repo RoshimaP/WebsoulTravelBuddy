@@ -69,16 +69,16 @@ render() {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default "  >
                   <MDBDropdownItem  header  href="#!"  >Bus Ticket</MDBDropdownItem>
-                  <MDBDropdownItem  href="#!">
+                  <MDBDropdownItem  >
                   <Link to="/Cancel"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >Cancel</Link>
                     </MDBDropdownItem>
-                  <MDBDropdownItem href="#!"><Link to="/Reschedule"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                  <MDBDropdownItem ><Link to="/Reschedule"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                ReSchedule
                 </Link></MDBDropdownItem>
-                  <MDBDropdownItem href="#!"> <Link to="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                  <MDBDropdownItem > <Link to="/Showmyticket"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                 Show My Ticket
                 </Link></MDBDropdownItem>
-                  <MDBDropdownItem href="#!"><Link to="/SMSand"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
+                  <MDBDropdownItem ><Link to="/SMSand"  class="navbar-brand uk-text-bold bus-ticket "  style={{fontSize:"12px",fontWeight:"100"}} >
                Email/SMS
                 </Link></MDBDropdownItem>
 
