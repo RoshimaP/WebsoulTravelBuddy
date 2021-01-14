@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../header/FixedHeader';
 import Footer from '../../footer/Footer';
-import '../cancelticket/cancelticket.css';
+
 import modalimg from '../../../assets/help/modelimg.svg';
 import redicon from '../../../assets/homepage/logo_org.png';
 import facebook from '../../../assets/help/facebookicon.svg';
