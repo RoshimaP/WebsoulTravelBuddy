@@ -13,7 +13,7 @@ class  Help extends Component {
                                                         super(props);
                                                 
                                                         this.state = {
-                                                            modalState: true
+                                                            modalState: false
                                                         };
                                                 
                                                         this.handleShow = this.handleShow.bind(this);
@@ -24,7 +24,7 @@ class  Help extends Component {
                                                       }) 
                                                     }
                                                     handleShow() {
-                                                        this.setState({ modalState: !this.state.modalState });
+                                                        this.setState({ modalState: false });
                                                     }  
 
 render()
