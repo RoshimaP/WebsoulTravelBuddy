@@ -95,7 +95,7 @@ render() {
                 <MDBDropdownMenu className="dropdown-default"  > 
                 <div style={{}}>
                 <MDBDropdownItem href="#!" >
-                <button class="uk-button uk-text" data-target="#exampleModal" data-whatever="@mdo" style={{fontSize:"14px",fontWeight:"700",textAlign:"center",fontFamily: "Montserrat",backgroundColor: "#d84e55",color: "#fff",height:"48",boxShadow: "1px 2px 3px #888888",marginLeft:"20px"}} >Sign In/Sign Up</button>
+                <button class="uk-button uk-text" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style={{fontSize:"14px",fontWeight:"700",textAlign:"center",fontFamily: "Montserrat",backgroundColor: "#d84e55",color: "#fff",height:"48",boxShadow: "1px 2px 3px #888888",marginLeft:"20px"}} >Sign In/Sign Up</button>
 
   
   
